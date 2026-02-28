@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Circuit Designer</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/core/layout.css">
+    <link rel="stylesheet" href="css/core/workspace.css">
+    <link rel="stylesheet" href="css/ui/tools.css">
+</head>
+<body>
+
+    <div id="ui-root">
+        <!-- LEFT TOOLS PANEL -->
+        <aside id="left-panel" class="tools-panel">
+            <div class="panel-header">
+                <h2>AURA</h2>
+                <span class="version">v0.1.0</span>
+            </div>
+
+            <div class="tool-section">
+                <div class="section-title">Workspace Configuration</div>
+                
+                <div class="property-row">
+                    <span>Grid Resolution</span>
+                    <input type="range" id="grid-res-slider" min="5" max="50" value="10" oninput="setGridResolution(this.value)">
+                </div>
+
+                <div class="property-grid">
+                    <div class="prop">
+                        <label>Base Unit</label>
+                        <div class="readonly-val">0.3175mm</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <div class="section-title">Background Reference</div>
+                <div class="texture-grid">
+                    <button class="texture-btn" onclick="setTexture('texture1.jpg')">T1</button>
+                    <button class="texture-btn" onclick="setTexture('texture2.jpg')">T2</button>
+                    <button class="texture-btn" onclick="setTexture('texture3.jpg')">T3</button>
+                    <button class="texture-btn" onclick="setTexture('texture4.jpg')">T4</button>
+                </div>
+
+                <div class="property-row" style="margin-top: 15px;">
+                    <span>Theme</span>
+                    <div style="display: flex; gap: 4px;">
+                        <button class="mini-btn" onclick="setTheme('dark')">Dark</button>
+                        <button class="mini-btn" onclick="setTheme('blueprint')">Blue</button>
+                        <button class="mini-btn" onclick="setTheme('light')">Light</button>
+                    </div>
+                </div>
+
+                <div class="property-row">
+                    <span>Accent</span>
+                    <div class="accent-palette">
+                        <div class="color-dot" style="background: #4a90e2;" onclick="setAccentColor('#4a90e2')"></div>
+                        <div class="color-dot" style="background: #4CAF50;" onclick="setAccentColor('#4CAF50')"></div>
+                        <div class="color-dot" style="background: #FFC107;" onclick="setAccentColor('#FFC107')"></div>
+                        <div class="color-dot" style="background: #FF5722;" onclick="setAccentColor('#FF5722')"></div>
+                        <div class="color-dot" style="background: #ffffff;" onclick="setAccentColor('#ffffff')"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <div class="section-title">Components</div>
+                <div id="component-palette" class="property-grid">
+                    <!-- Dynamic buttons will be injected here -->
+                    <div class="loading-text">Loading Parts...</div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <div class="section-title">Calculations</div>
+                <button onclick="alert('LED Calculation logic here...')">LED Resistor</button>
+            </div>
+        </aside>
+
+        <!-- MAIN WORKSPACE -->
+        <main id="workspace-container" class="workspace-panel">
+            <canvas id="scale-overlay"></canvas>
+            
+            <!-- Elegant Workspace HUD (Outside the frame) -->
+            <div id="workspace-hud">
+                <div class="hud-group">
+                    <div class="hud-slider-box">
+                        <input type="range" id="grid-opacity-slider" min="0" max="100" value="40" oninput="setGridOpacity(this.value)" title="Grid Opacity">
+                    </div>
+                    <button class="hud-btn active" id="grid-toggle-btn" onclick="toggleGrid()" title="Toggle Grid Visibility">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg>
+                    </button>
+                    <div class="hud-sep"></div>
+                    <button class="hud-btn" onclick="resetOrigin()" title="Snap to Origin">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22V20H14V22H10M22,10V14H20V10H22M2,10V14H4V10H2M10,2V4H14V2H10Z"/></svg>
+                    </button>
+                    <div class="hud-sep"></div>
+                    <button id="bg-lock-btn" class="hud-btn" onclick="toggleTextureLock()" title="Align Background">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M15,3H6C4.89,3 4,3.89 4,5V19C4,20.11 4.89,21 6,21H18C19.11,21 20,20.11 20,19V8L15,3M18,19H6V5H14V9H18V19M8,12V14H16V12H8M8,16V18H13V16H8Z"/></svg>
+                    </button>
+                    <div class="hud-sep"></div>
+                    <button id="style-toggle-btn" class="hud-btn-text" onclick="toggleStyle()" title="Toggle Visual Style" style="font-size: 8px; font-weight: bold; width: auto; padding: 0 8px;">STYLE: SKETCHY</button>
+                </div>
+                <div id="status-group">
+                    <div id="status-light"></div>
+                    <span id="status-text">GRID</span>
+                    <span id="coord-display">0u, 0u</span>
+                </div>
+            </div>
+
+            <div id="workspace-frame" class="workspace-frame">
+                <canvas id="workspace"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "type": "resistor_5band",
+  "label": "Resistor (5-Band)",
+  "views": {
+    "breadboard": "assets/breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 32,
+  "uH": 8,
+  "originX": 16,
+  "originY": 3.439,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -14,
+      "uY": 0,
+      "label": "1"
+    },
+    {
+      "id": "connector1",
+      "uX": 14,
+      "uY": 0,
+      "label": "2"
+    }
+  ],
+  "category": "Passives",
+  "sub_category": "Resistors"
+}

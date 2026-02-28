@@ -1,0 +1,259 @@
+{
+  "type": "arduino_nano",
+  "label": "Arduino Nano v3 (ICSP)",
+  "views": {
+    "breadboard": "assets/breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 56,
+  "uH": 142,
+  "originX": 28,
+  "originY": 71,
+  "indicators": [
+    {
+      "id": "PWR",
+      "uX": 12,
+      "uY": 34,
+      "color": "#ff3333"
+    },
+    {
+      "id": "L",
+      "uX": 24,
+      "uY": 34,
+      "color": "#33ff33"
+    },
+    {
+      "id": "TX",
+      "uX": -1,
+      "uY": 34,
+      "color": "#ffcc00"
+    },
+    {
+      "id": "RX",
+      "uX": 6,
+      "uY": 34,
+      "color": "#ffcc00"
+    }
+  ],
+  "pins": [
+    {
+      "id": "connector16",
+      "uX": -24,
+      "uY": 59,
+      "label": "D1/TX"
+    },
+    {
+      "id": "connector17",
+      "uX": -24,
+      "uY": 51,
+      "label": "D0/RX"
+    },
+    {
+      "id": "connector18",
+      "uX": -24,
+      "uY": 43,
+      "label": "RESET"
+    },
+    {
+      "id": "connector19",
+      "uX": -24,
+      "uY": 35,
+      "label": "GND"
+    },
+    {
+      "id": "connector20",
+      "uX": -24,
+      "uY": 27,
+      "label": "D2"
+    },
+    {
+      "id": "connector21",
+      "uX": -24,
+      "uY": 19,
+      "label": "D3"
+    },
+    {
+      "id": "connector22",
+      "uX": -24,
+      "uY": 11,
+      "label": "D4"
+    },
+    {
+      "id": "connector23",
+      "uX": -24,
+      "uY": 3,
+      "label": "D5"
+    },
+    {
+      "id": "connector24",
+      "uX": -24,
+      "uY": -5,
+      "label": "D6"
+    },
+    {
+      "id": "connector25",
+      "uX": -24,
+      "uY": -13,
+      "label": "D7"
+    },
+    {
+      "id": "connector26",
+      "uX": -24,
+      "uY": -21,
+      "label": "D8"
+    },
+    {
+      "id": "connector27",
+      "uX": -24,
+      "uY": -29,
+      "label": "D9"
+    },
+    {
+      "id": "connector28",
+      "uX": -24,
+      "uY": -37,
+      "label": "D10"
+    },
+    {
+      "id": "connector29",
+      "uX": -24,
+      "uY": -45,
+      "label": "D11/MOSI"
+    },
+    {
+      "id": "connector30",
+      "uX": -24,
+      "uY": -53,
+      "label": "D12/MISO"
+    },
+    {
+      "id": "connector31",
+      "uX": 24,
+      "uY": 59,
+      "label": "VIN"
+    },
+    {
+      "id": "connector32",
+      "uX": 24,
+      "uY": 51,
+      "label": "GND"
+    },
+    {
+      "id": "connector33",
+      "uX": 24,
+      "uY": 43,
+      "label": "RESET"
+    },
+    {
+      "id": "connector34",
+      "uX": 24,
+      "uY": 35,
+      "label": "5V"
+    },
+    {
+      "id": "connector35",
+      "uX": 24,
+      "uY": 27,
+      "label": "A7"
+    },
+    {
+      "id": "connector36",
+      "uX": 24,
+      "uY": 19,
+      "label": "A6"
+    },
+    {
+      "id": "connector37",
+      "uX": 24,
+      "uY": 11,
+      "label": "A5"
+    },
+    {
+      "id": "connector38",
+      "uX": 24,
+      "uY": 3,
+      "label": "A4"
+    },
+    {
+      "id": "connector39",
+      "uX": 24,
+      "uY": -5,
+      "label": "A3"
+    },
+    {
+      "id": "connector40",
+      "uX": 24,
+      "uY": -13,
+      "label": "A2"
+    },
+    {
+      "id": "connector41",
+      "uX": 24,
+      "uY": -21,
+      "label": "A1"
+    },
+    {
+      "id": "connector42",
+      "uX": 24,
+      "uY": -29,
+      "label": "A0"
+    },
+    {
+      "id": "connector43",
+      "uX": 24,
+      "uY": -37,
+      "label": "AREF"
+    },
+    {
+      "id": "connector44",
+      "uX": 24,
+      "uY": -45,
+      "label": "3V3"
+    },
+    {
+      "id": "connector45",
+      "uX": 24,
+      "uY": -53,
+      "label": "D13/SCK"
+    },
+    {
+      "id": "connector55",
+      "uX": 8,
+      "uY": 67,
+      "label": "D12/MISO (ICSP)"
+    },
+    {
+      "id": "connector56",
+      "uX": 8,
+      "uY": 59,
+      "label": "5V (ICSP)"
+    },
+    {
+      "id": "connector57",
+      "uX": 0,
+      "uY": 67,
+      "label": "D13/SCK (ICSP)"
+    },
+    {
+      "id": "connector58",
+      "uX": 0,
+      "uY": 59,
+      "label": "D11/MOSI (ICSP)"
+    },
+    {
+      "id": "connector59",
+      "uX": -8,
+      "uY": 67,
+      "label": "RESET (ICSP)"
+    },
+    {
+      "id": "connector60",
+      "uX": -8,
+      "uY": 59,
+      "label": "GND (ICSP)"
+    }
+  ],
+  "category": "MCU",
+  "sub_category": "Modules"
+}

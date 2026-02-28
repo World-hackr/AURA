@@ -1,0 +1,235 @@
+{
+  "type": "arduino_pro_mini",
+  "label": "Arduino Pro Mini (5V)",
+  "views": {
+    "breadboard": "assets/breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 56,
+  "uH": 104,
+  "originX": 28,
+  "originY": 52,
+  "indicators": [
+    {
+      "id": "PWR",
+      "uX": 20,
+      "uY": 34,
+      "color": "#ff3333"
+    },
+    {
+      "id": "L",
+      "uX": 20,
+      "uY": 28,
+      "color": "#33ff33"
+    }
+  ],
+  "pins": [
+    {
+      "id": "connector14",
+      "uX": 20,
+      "uY": 48,
+      "label": "DTR"
+    },
+    {
+      "id": "connector15",
+      "uX": 12,
+      "uY": 48,
+      "label": "TXO"
+    },
+    {
+      "id": "connector16",
+      "uX": 4,
+      "uY": 48,
+      "label": "RXI"
+    },
+    {
+      "id": "connector17",
+      "uX": -4,
+      "uY": 48,
+      "label": "VCC"
+    },
+    {
+      "id": "connector18",
+      "uX": -12,
+      "uY": 48,
+      "label": "GND"
+    },
+    {
+      "id": "connector19",
+      "uX": -20,
+      "uY": 48,
+      "label": "GND"
+    },
+    {
+      "id": "connector48",
+      "uX": -24,
+      "uY": 40,
+      "label": "TXO"
+    },
+    {
+      "id": "connector47",
+      "uX": -24,
+      "uY": 32,
+      "label": "RXI"
+    },
+    {
+      "id": "connector46",
+      "uX": -24,
+      "uY": 24,
+      "label": "RESET"
+    },
+    {
+      "id": "connector45",
+      "uX": -24,
+      "uY": 16,
+      "label": "GND"
+    },
+    {
+      "id": "connector44",
+      "uX": -24,
+      "uY": 8,
+      "label": "D2"
+    },
+    {
+      "id": "connector43",
+      "uX": -24,
+      "uY": 0,
+      "label": "D3"
+    },
+    {
+      "id": "connector42",
+      "uX": -24,
+      "uY": -8,
+      "label": "D4"
+    },
+    {
+      "id": "connector41",
+      "uX": -24,
+      "uY": -16,
+      "label": "D5"
+    },
+    {
+      "id": "connector40",
+      "uX": -24,
+      "uY": -24,
+      "label": "D6"
+    },
+    {
+      "id": "connector39",
+      "uX": -24,
+      "uY": -32,
+      "label": "D7"
+    },
+    {
+      "id": "connector38",
+      "uX": -24,
+      "uY": -40,
+      "label": "D8"
+    },
+    {
+      "id": "connector37",
+      "uX": -24,
+      "uY": -48,
+      "label": "D9"
+    },
+    {
+      "id": "connector25",
+      "uX": 24,
+      "uY": 40,
+      "label": "RAW"
+    },
+    {
+      "id": "connector26",
+      "uX": 24,
+      "uY": 32,
+      "label": "GND"
+    },
+    {
+      "id": "connector27",
+      "uX": 24,
+      "uY": 24,
+      "label": "RESET"
+    },
+    {
+      "id": "connector28",
+      "uX": 24,
+      "uY": 16,
+      "label": "VCC"
+    },
+    {
+      "id": "connector29",
+      "uX": 24,
+      "uY": 8,
+      "label": "A3"
+    },
+    {
+      "id": "connector30",
+      "uX": 24,
+      "uY": 0,
+      "label": "A2"
+    },
+    {
+      "id": "connector31",
+      "uX": 24,
+      "uY": -8,
+      "label": "A1"
+    },
+    {
+      "id": "connector32",
+      "uX": 24,
+      "uY": -16,
+      "label": "A0"
+    },
+    {
+      "id": "connector33",
+      "uX": 24,
+      "uY": -24,
+      "label": "SCK"
+    },
+    {
+      "id": "connector34",
+      "uX": 24,
+      "uY": -32,
+      "label": "MISO"
+    },
+    {
+      "id": "connector35",
+      "uX": 24,
+      "uY": -40,
+      "label": "MOSI"
+    },
+    {
+      "id": "connector36",
+      "uX": 24,
+      "uY": -48,
+      "label": "D10"
+    },
+    {
+      "id": "connector20",
+      "uX": 14.8,
+      "uY": 4.4,
+      "label": "A4"
+    },
+    {
+      "id": "connector21",
+      "uX": 14.8,
+      "uY": 12.4,
+      "label": "A5"
+    },
+    {
+      "id": "connector22",
+      "uX": 14.8,
+      "uY": -28.2,
+      "label": "A6"
+    },
+    {
+      "id": "connector23",
+      "uX": 14.8,
+      "uY": -20.2,
+      "label": "A7"
+    }
+  ],
+  "category": "MCU",
+  "sub_category": "Modules"
+}
