@@ -1,0 +1,28 @@
+{
+  "type": "led_3mm",
+  "label": "LED (3mm)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/LED-3mm-red-leg.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 17,
+  "uH": 32,
+  "originX": 8.5,
+  "originY": 16.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -3,
+      "uY": -13,
+      "label": "cathode"
+    },
+    {
+      "id": "connector1",
+      "uX": 5,
+      "uY": -13,
+      "label": "anode"
+    }
+  ]
+}

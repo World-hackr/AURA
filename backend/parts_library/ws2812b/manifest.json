@@ -1,0 +1,40 @@
+{
+  "type": "ws2812b",
+  "label": "WS2812B RGB LED",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/ws2812b_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 24,
+  "uH": 48,
+  "originX": 12.0,
+  "originY": 24.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -46,
+      "uY": 351,
+      "label": "VDD"
+    },
+    {
+      "id": "connector1",
+      "uX": -252,
+      "uY": 351,
+      "label": "DOUT"
+    },
+    {
+      "id": "connector2",
+      "uX": -252,
+      "uY": 58,
+      "label": "VSS"
+    },
+    {
+      "id": "connector3",
+      "uX": -157,
+      "uY": 58,
+      "label": "DIN"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "type": "alphanumeric_sparkfun",
+  "label": "Alphanumeric LED Display",
+  "category": "Uncategorized",
+  "views": {
+    "breadboard": "assets/sparkfun-displays_alphanumeric_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 65,
+  "uH": 115,
+  "originX": 32.5,
+  "originY": 57.5,
+  "pins": [
+    {
+      "id": "connector1",
+      "uX": -28,
+      "uY": 31,
+      "label": "A1"
+    },
+    {
+      "id": "connector17",
+      "uX": 28,
+      "uY": 23,
+      "label": "A2"
+    },
+    {
+      "id": "connector16",
+      "uX": 28,
+      "uY": 15,
+      "label": "B"
+    },
+    {
+      "id": "connector13",
+      "uX": 28,
+      "uY": -25,
+      "label": "C"
+    },
+    {
+      "id": "connector7",
+      "uX": -28,
+      "uY": -33,
+      "label": "D1"
+    },
+    {
+      "id": "connector11",
+      "uX": 28,
+      "uY": -41,
+      "label": "D2"
+    },
+    {
+      "id": "connector6",
+      "uX": -28,
+      "uY": -25,
+      "label": "E"
+    },
+    {
+      "id": "connector3",
+      "uX": -28,
+      "uY": 15,
+      "label": "F"
+    },
+    {
+      "id": "connector5",
+      "uX": -28,
+      "uY": -9,
+      "label": "G1"
+    },
+    {
+      "id": "connector15",
+      "uX": 28,
+      "uY": -1,
+      "label": "G2"
+    },
+    {
+      "id": "connector2",
+      "uX": -28,
+      "uY": 23,
+      "label": "H"
+    },
+    {
+      "id": "connector19",
+      "uX": 28,
+      "uY": 39,
+      "label": "J"
+    },
+    {
+      "id": "connector18",
+      "uX": 28,
+      "uY": 31,
+      "label": "K"
+    },
+    {
+      "id": "connector12",
+      "uX": 28,
+      "uY": -33,
+      "label": "L"
+    },
+    {
+      "id": "connector9",
+      "uX": -28,
+      "uY": -49,
+      "label": "M"
+    },
+    {
+      "id": "connector8",
+      "uX": -28,
+      "uY": -41,
+      "label": "N"
+    },
+    {
+      "id": "connector0",
+      "uX": -28,
+      "uY": 39,
+      "label": "NC"
+    },
+    {
+      "id": "connector10",
+      "uX": 28,
+      "uY": -49,
+      "label": "NC"
+    },
+    {
+      "id": "connector14",
+      "uX": 28,
+      "uY": -9,
+      "label": "VCC"
+    },
+    {
+      "id": "connector4",
+      "uX": -28,
+      "uY": -1,
+      "label": "VCC"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "led_rgb_4pin",
+  "label": "RGB LED (4-Pin)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/led-rgb-4pin-anode-leg.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 26,
+  "uH": 36,
+  "originX": 13.0,
+  "originY": 18.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -12,
+      "uY": -7,
+      "label": "red cathode"
+    },
+    {
+      "id": "connector1",
+      "uX": -4,
+      "uY": -7,
+      "label": "common anode"
+    },
+    {
+      "id": "connector2",
+      "uX": 4,
+      "uY": -7,
+      "label": "green cathode"
+    },
+    {
+      "id": "connector3",
+      "uX": 12,
+      "uY": -7,
+      "label": "blue cathode"
+    }
+  ]
+}

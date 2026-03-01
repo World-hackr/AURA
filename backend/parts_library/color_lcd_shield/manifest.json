@@ -1,0 +1,184 @@
+{
+  "type": "color_lcd_shield",
+  "label": "Color LCD Shield (Arduino)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/Color-LCD-Shield-v14_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 188,
+  "uH": 168,
+  "originX": 94.0,
+  "originY": 84.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": 38,
+      "uY": -76,
+      "label": "A0"
+    },
+    {
+      "id": "connector1",
+      "uX": 46,
+      "uY": -76,
+      "label": "A1"
+    },
+    {
+      "id": "connector2",
+      "uX": 54,
+      "uY": -76,
+      "label": "A2"
+    },
+    {
+      "id": "connector3",
+      "uX": 62,
+      "uY": -76,
+      "label": "A3"
+    },
+    {
+      "id": "connector4",
+      "uX": 70,
+      "uY": -76,
+      "label": "A4"
+    },
+    {
+      "id": "connector5",
+      "uX": 78,
+      "uY": -76,
+      "label": "A5"
+    },
+    {
+      "id": "connector14",
+      "uX": 22,
+      "uY": 76,
+      "label": "D7"
+    },
+    {
+      "id": "connector15",
+      "uX": 30,
+      "uY": 76,
+      "label": "D6"
+    },
+    {
+      "id": "connector16",
+      "uX": 38,
+      "uY": 76,
+      "label": "D5"
+    },
+    {
+      "id": "connector17",
+      "uX": 46,
+      "uY": 76,
+      "label": "D4"
+    },
+    {
+      "id": "connector18",
+      "uX": 54,
+      "uY": 76,
+      "label": "D3"
+    },
+    {
+      "id": "connector19",
+      "uX": 62,
+      "uY": 76,
+      "label": "D2"
+    },
+    {
+      "id": "connector20",
+      "uX": 70,
+      "uY": 76,
+      "label": "D1"
+    },
+    {
+      "id": "connector21",
+      "uX": 78,
+      "uY": 76,
+      "label": "D0"
+    },
+    {
+      "id": "connector22",
+      "uX": -46,
+      "uY": 76,
+      "label": "AREF"
+    },
+    {
+      "id": "connector23",
+      "uX": -38,
+      "uY": 76,
+      "label": "GND"
+    },
+    {
+      "id": "connector24",
+      "uX": -30,
+      "uY": 76,
+      "label": "D13"
+    },
+    {
+      "id": "connector25",
+      "uX": -22,
+      "uY": 76,
+      "label": "D12"
+    },
+    {
+      "id": "connector26",
+      "uX": -14,
+      "uY": 76,
+      "label": "D11"
+    },
+    {
+      "id": "connector27",
+      "uX": -6,
+      "uY": 76,
+      "label": "D10"
+    },
+    {
+      "id": "connector28",
+      "uX": 2,
+      "uY": 76,
+      "label": "D9"
+    },
+    {
+      "id": "connector29",
+      "uX": 10,
+      "uY": 76,
+      "label": "D8"
+    },
+    {
+      "id": "connector34",
+      "uX": 22,
+      "uY": -76,
+      "label": "VIN"
+    },
+    {
+      "id": "connector35",
+      "uX": 14,
+      "uY": -76,
+      "label": "GND"
+    },
+    {
+      "id": "connector36",
+      "uX": 6,
+      "uY": -76,
+      "label": "GND"
+    },
+    {
+      "id": "connector37",
+      "uX": -2,
+      "uY": -76,
+      "label": "5V"
+    },
+    {
+      "id": "connector38",
+      "uX": -10,
+      "uY": -76,
+      "label": "3.3V"
+    },
+    {
+      "id": "connector39",
+      "uX": -18,
+      "uY": -76,
+      "label": "RESET"
+    }
+  ]
+}

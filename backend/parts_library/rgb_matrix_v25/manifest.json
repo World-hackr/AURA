@@ -1,0 +1,88 @@
+{
+  "type": "rgb_matrix_v25",
+  "label": "RGB LED Matrix (Serial)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/RGB_matrix_v25_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 176,
+  "uH": 195,
+  "originX": 88.0,
+  "originY": 97.5,
+  "pins": [
+    {
+      "id": "connector128",
+      "uX": 53,
+      "uY": 59,
+      "label": "VCC"
+    },
+    {
+      "id": "connector129",
+      "uX": 45,
+      "uY": 59,
+      "label": "VCC"
+    },
+    {
+      "id": "connector130",
+      "uX": 37,
+      "uY": 59,
+      "label": "SCK"
+    },
+    {
+      "id": "connector131",
+      "uX": 29,
+      "uY": 59,
+      "label": "CS"
+    },
+    {
+      "id": "connector132",
+      "uX": 21,
+      "uY": 59,
+      "label": "MISO"
+    },
+    {
+      "id": "connector133",
+      "uX": 13,
+      "uY": 59,
+      "label": "GND"
+    },
+    {
+      "id": "connector134",
+      "uX": -20,
+      "uY": -91,
+      "label": "GND"
+    },
+    {
+      "id": "connector135",
+      "uX": -12,
+      "uY": -91,
+      "label": "MOSI"
+    },
+    {
+      "id": "connector136",
+      "uX": -4,
+      "uY": -91,
+      "label": "CS"
+    },
+    {
+      "id": "connector137",
+      "uX": 4,
+      "uY": -91,
+      "label": "SCK"
+    },
+    {
+      "id": "connector138",
+      "uX": 12,
+      "uY": -91,
+      "label": "VCC"
+    },
+    {
+      "id": "connector139",
+      "uX": 20,
+      "uY": -91,
+      "label": "VCC"
+    }
+  ]
+}

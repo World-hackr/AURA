@@ -66,7 +66,7 @@ async function initLibrary() {
             COMPONENT_DEFS[comp.type] = comp;
         });
 
-        renderFlatPalette(data);
+        renderCategorizedPalette(data);
         backendOnline = true;
         draw();
     } catch (e) {
@@ -75,23 +75,218 @@ async function initLibrary() {
     }
 }
 
-function renderFlatPalette(data) {
+const CATEGORY_ICONS = {
+    'Recent': '<svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/></svg>',
+    'MCU': '<svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6,4H18V5H21V7H18V9H21V11H18V13H21V15H18V17H21V19H18V20H6V19H3V17H6V15H3V13H6V11H3V9H6V7H3V5H6V4M11,15H13V17H11V15M11,11H13V13H11V11M11,7H13V9H11V7Z"/></svg>',
+    'Passives': '<svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M2,11H7L10.07,15.35L13.11,4L18,11H22V13H16L13.15,19.32L9.9,7L7,13H2V11Z"/></svg>',
+    'Optoelectronics': '<svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21Z"/></svg>',
+    'Switches': '<svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M17,7H7V17H17V7M17,5A2,2 0 0,1 19,7V17A2,2 0 0,1 17,19H7A2,2 0 0,1 5,17V7A2,2 0 0,1 7,5H17M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>',
+    'Uncategorized': '<svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12,2L3,7L12,12L21,7L12,2M12,14.67L3,9.67V16.5L12,21.5L21,16.5V9.67L12,14.67Z"/></svg>'
+};
+
+function getCategoryIcon(name) {
+    return CATEGORY_ICONS[name] || CATEGORY_ICONS['Uncategorized'];
+}
+
+let recentComponents = [];
+let activeCategory = 'Recent';
+
+function renderCategorizedPalette(data) {
     const container = document.getElementById("component-palette");
     if (!container) return;
     container.innerHTML = "";
 
+    // Add search bar
+    const searchWrapper = document.createElement("div");
+    searchWrapper.style.marginBottom = "10px";
+    
+    const searchInput = document.createElement("input");
+    searchInput.type = "text";
+    searchInput.placeholder = "Search components...";
+    searchInput.className = "component-search";
+    
+    searchWrapper.appendChild(searchInput);
+    container.appendChild(searchWrapper);
+
+    const categories = {};
+    
+    // Auto-inject Recents if they exist
+    if (recentComponents.length > 0) {
+        categories['Recent'] = recentComponents.map(id => data.find(p => p.type === id)).filter(Boolean);
+    }
+
     data.forEach(part => {
-        const btn = document.createElement("button");
-        btn.className = "tool-btn";
-        btn.innerText = part.label.split(' ')[0]; // Simple short name
-        btn.onclick = () => {
-            document.querySelectorAll('.tool-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            addComponent(part.type);
-        };
-        container.appendChild(btn);
+        const cat = part.category || 'Uncategorized';
+        if (!categories[cat]) categories[cat] = [];
+        categories[cat].push(part);
     });
+
+    // If 'Recent' is empty and active, fallback to first available
+    if (!categories[activeCategory] && Object.keys(categories).length > 0) {
+        activeCategory = Object.keys(categories).sort()[0];
+    }
+
+    // Force rendering order: Recent first, then others alphabetically
+    const sortedCats = Object.keys(categories).sort((a, b) => {
+        if (a === 'Recent') return -1;
+        if (b === 'Recent') return 1;
+        return a.localeCompare(b);
+    });
+
+    // Create Icon Row
+    const iconRow = document.createElement("div");
+    iconRow.className = "category-row";
+    
+    // Create List Container
+    const listContainer = document.createElement("div");
+    listContainer.className = "category-content-container";
+
+    let currentListDiv = null;
+
+    // Build the UI
+    for (const catName of sortedCats) {
+        const parts = categories[catName];
+        if (parts.length === 0) continue;
+
+        // Icon Header
+        const header = document.createElement("div");
+        header.className = "category-header" + (activeCategory === catName ? " expanded" : "");
+        header.setAttribute("data-tooltip", catName);
+        header.innerHTML = getCategoryIcon(catName);
+        
+        // Parts List (Hidden unless active)
+        const list = document.createElement("div");
+        list.className = "category-list";
+        list.style.display = (activeCategory === catName) ? "flex" : "none";
+        list.style.flexDirection = "column";
+        list.style.gap = "4px";
+
+        if (activeCategory === catName) {
+            currentListDiv = list;
+        }
+
+        header.onclick = () => {
+            activeCategory = catName;
+            searchInput.value = ''; // clear search on category switch
+            renderCategorizedPalette(data); // re-render to update classes
+        };
+
+        const buttons = [];
+        parts.forEach(part => {
+            const btn = document.createElement("button");
+            btn.className = "tool-btn mini";
+            btn.innerText = part.label;
+            btn.dataset.label = part.label.toLowerCase();
+            btn.onclick = () => {
+                document.querySelectorAll('.tool-btn.mini').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Track recent
+                if (!recentComponents.includes(part.type)) {
+                    recentComponents.unshift(part.type);
+                    if (recentComponents.length > 8) recentComponents.pop();
+                    renderCategorizedPalette(data);
+                }
+                
+                addComponent(part.type);
+            };
+            list.appendChild(btn);
+            buttons.push(btn);
+        });
+
+        iconRow.appendChild(header);
+        listContainer.appendChild(list);
+
+        // Map them for search logic
+        categories[catName].listEl = list;
+        categories[catName].buttons = buttons;
+        categories[catName].headerEl = header;
+    }
+
+    container.appendChild(iconRow);
+    container.appendChild(listContainer);
+
+    // Search logic
+    searchInput.oninput = (e) => {
+        const query = e.target.value.toLowerCase();
+        
+        // If searching, hide the icon row to show all matching across all categories
+        if (query.trim() !== "") {
+            iconRow.style.display = "none";
+            
+            for (const catName of sortedCats) {
+                const catData = categories[catName];
+                if(!catData.listEl) continue;
+                
+                let hasMatch = false;
+                catData.buttons.forEach(btn => {
+                    if (btn.dataset.label.includes(query)) {
+                        btn.style.display = "flex";
+                        hasMatch = true;
+                    } else {
+                        btn.style.display = "none";
+                    }
+                });
+
+                if (hasMatch) {
+                    catData.listEl.style.display = "flex";
+                } else {
+                    catData.listEl.style.display = "none";
+                }
+            }
+        } else {
+            // Restore normal view
+            iconRow.style.display = "flex";
+            for (const catName of sortedCats) {
+                const catData = categories[catName];
+                if(!catData.listEl) continue;
+                catData.buttons.forEach(btn => btn.style.display = "flex");
+                catData.listEl.style.display = (activeCategory === catName) ? "flex" : "none";
+            }
+        }
+    };
 }
+
+// Resizer logic
+let isResizingPanel = false;
+document.addEventListener('DOMContentLoaded', () => {
+    const resizer = document.getElementById('panel-resizer');
+    const leftPanel = document.getElementById('left-panel');
+    
+    if (resizer && leftPanel) {
+        resizer.addEventListener('mousedown', (e) => {
+            isResizingPanel = true;
+            resizer.classList.add('resizing');
+            document.body.style.cursor = 'ew-resize';
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isResizingPanel) return;
+            // Get offset left of the ui-root to calculate true width
+            const offset = leftPanel.getBoundingClientRect().left;
+            let newWidth = e.clientX - offset;
+            
+            // Constrain width
+            if (newWidth < 250) newWidth = 250;
+            if (newWidth > 800) newWidth = 800;
+            
+            leftPanel.style.width = newWidth + 'px';
+            leftPanel.style.minWidth = newWidth + 'px';
+            
+            // Re-calc canvas resize
+            resizeWorkspace();
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (isResizingPanel) {
+                isResizingPanel = false;
+                resizer.classList.remove('resizing');
+                document.body.style.cursor = 'default';
+                resizeWorkspace();
+            }
+        });
+    }
+});
 
 let components = [];
 
@@ -289,38 +484,41 @@ function drawScale() {
     if (selectedComponent) {
         scaleCtx.fillStyle = "rgba(0,0,0,0.7)";
         scaleCtx.beginPath();
-        scaleCtx.roundRect(contRect.width/2 - 80, 60, 160, 24, 12);
+        scaleCtx.roundRect(contRect.width/2 - 90, 60, 180, 30, 15);
         scaleCtx.fill();
         scaleCtx.fillStyle = "white";
         scaleCtx.textAlign = "center";
-        scaleCtx.font = "bold 10px Monospace";
-        scaleCtx.fillText("PRESS 'R' TO ROTATE", contRect.width/2, 75);
+        scaleCtx.font = "bold 13px 'JetBrains Mono', Monospace";
+        scaleCtx.fillText("PRESS 'R' TO ROTATE", contRect.width/2, 80);
     }
     const isLight = frame.style.background === "rgb(255, 255, 255)";
     scaleCtx.textAlign = "left";
     scaleCtx.fillStyle = backendOnline ? "#4caf50" : "#f44336";
-    scaleCtx.font = "bold 9px Monospace";
-    scaleCtx.fillText(backendOnline ? "● BACKEND: ONLINE" : "● BACKEND: OFFLINE", startX, startY - 30);
+    scaleCtx.font = "bold 12px 'JetBrains Mono', Monospace";
+    scaleCtx.fillText(backendOnline ? "● BACKEND: ONLINE" : "● BACKEND: OFFLINE", startX + 16, startY - 35);
     scaleCtx.fillStyle = isLight ? "#111" : (accentColor || "#4a90e2");
-    scaleCtx.font = "bold 11px Monospace";
-    scaleCtx.fillText("AURA | VIRTUAL GRID SYSTEM", startX, startY - 18);
-    scaleCtx.fillStyle = isLight ? "rgba(0,0,0,0.6)" : "rgba(255,255,255,0.5)";
-    scaleCtx.font = "9px Monospace";
-    scaleCtx.fillText(`UNIT: ${BASE_UNIT_MM}mm | CAL: ${pixelsPerUnit}px/u | ZOOM: ${zoom.toFixed(2)}x`, startX, startY - 6);
+    scaleCtx.font = "bold 14px 'JetBrains Mono', Monospace";
+    scaleCtx.fillText("AURA | VIRTUAL GRID SYSTEM", startX + 16, startY - 18);
+    scaleCtx.fillStyle = isLight ? "rgba(0,0,0,0.6)" : "rgba(255,255,255,0.6)";
+    scaleCtx.font = "12px 'JetBrains Mono', Monospace";
+    scaleCtx.fillText(`UNIT: ${BASE_UNIT_MM}mm | CAL: ${pixelsPerUnit}px/u | ZOOM: ${zoom.toFixed(2)}x`, startX + 16, startY - 4);
+    
     const pxPerU = pixelsPerUnit * zoom;
     const potentialSteps = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000];
-    let unitStep = potentialSteps.find(s => s * pxPerU >= 45) || 1000;
+    let unitStep = potentialSteps.find(s => s * pxPerU >= 55) || 1000;
     const spacing = unitStep * pxPerU;
-    scaleCtx.fillStyle = isLight ? "rgba(0,0,0,0.4)" : "rgba(255,255,255,0.4)";
+    
+    scaleCtx.fillStyle = isLight ? "rgba(0,0,0,0.6)" : "rgba(255,255,255,0.6)";
+    scaleCtx.font = "11px 'JetBrains Mono', Monospace";
     scaleCtx.textAlign = "center";
     for(let x = Math.ceil(-offsetX / spacing) * spacing + offsetX; x < rect.width; x += spacing) {
         if (x < -1) continue;
-        scaleCtx.fillText(Math.round((x - offsetX) / pxPerU) + "u", startX + x, startY + rect.height + 16);
+        scaleCtx.fillText(Math.round((x - offsetX) / pxPerU) + "u", startX + x, startY + rect.height + 20);
     }
     scaleCtx.textAlign = "right";
     for(let y = Math.ceil(-offsetY / spacing) * spacing + offsetY; y < rect.height; y += spacing) {
         if (y < -1) continue;
-        scaleCtx.fillText(Math.round((offsetY - y) / pxPerU) + "u", startX - 10, startY + y + 3);
+        scaleCtx.fillText(Math.round((offsetY - y) / pxPerU) + "u", startX - 12, startY + y + 4);
     }
 }
 
@@ -373,11 +571,11 @@ window.onmousemove = (e) => {
                     const otherDef = COMPONENT_DEFS[otherComp.type];
                     if (!otherDef || !otherDef.pins) continue;
                     for (const otherPin of otherDef.pins) {
-                        const orad = (other.rotation || 0) * Math.PI / 180;
+                        const orad = (otherComp.rotation || 0) * Math.PI / 180;
                         const orx = otherPin.uX * Math.cos(orad) - (-otherPin.uY) * Math.sin(orad);
                         const ory = otherPin.uX * Math.sin(orad) + (-otherPin.uY) * Math.cos(orad);
-                        const targetX = other.uX + orx;
-                        const targetY = other.uY + (-ory);
+                        const targetX = otherComp.uX + orx;
+                        const targetY = otherComp.uY + (-ory);
                         const dist = Math.sqrt((myPinX - targetX)**2 + (myPinY - targetY)**2);
                         if (dist < 4) {
                             activeSnap = true; 

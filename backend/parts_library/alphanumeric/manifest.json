@@ -1,0 +1,208 @@
+{
+  "type": "alphanumeric",
+  "label": "Alphanumeric Display Driver",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/AlphaNumericDisplay-v13_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 91,
+  "uH": 168,
+  "originX": 45.5,
+  "originY": 84.0,
+  "pins": [
+    {
+      "id": "connector4",
+      "uX": 10,
+      "uY": -40,
+      "label": "SDI"
+    },
+    {
+      "id": "connector5",
+      "uX": 10,
+      "uY": -48,
+      "label": "CLK"
+    },
+    {
+      "id": "connector6",
+      "uX": 10,
+      "uY": -56,
+      "label": "LE"
+    },
+    {
+      "id": "connector7",
+      "uX": 10,
+      "uY": -64,
+      "label": "OE"
+    },
+    {
+      "id": "connector8",
+      "uX": 10,
+      "uY": -72,
+      "label": "VCC"
+    },
+    {
+      "id": "connector9",
+      "uX": 10,
+      "uY": -80,
+      "label": "GND"
+    },
+    {
+      "id": "connector12",
+      "uX": -7,
+      "uY": -40,
+      "label": "SDO"
+    },
+    {
+      "id": "connector13",
+      "uX": -7,
+      "uY": -48,
+      "label": "CLK"
+    },
+    {
+      "id": "connector14",
+      "uX": -7,
+      "uY": -56,
+      "label": "LE"
+    },
+    {
+      "id": "connector15",
+      "uX": -7,
+      "uY": -64,
+      "label": "OE"
+    },
+    {
+      "id": "connector16",
+      "uX": -7,
+      "uY": -72,
+      "label": "VCC"
+    },
+    {
+      "id": "connector17",
+      "uX": -7,
+      "uY": -80,
+      "label": "GND"
+    },
+    {
+      "id": "connector22",
+      "uX": 29,
+      "uY": 60,
+      "label": "1"
+    },
+    {
+      "id": "connector23",
+      "uX": 29,
+      "uY": 52,
+      "label": "A1"
+    },
+    {
+      "id": "connector24",
+      "uX": 29,
+      "uY": 44,
+      "label": "H"
+    },
+    {
+      "id": "connector25",
+      "uX": 29,
+      "uY": 36,
+      "label": "F"
+    },
+    {
+      "id": "connector26",
+      "uX": 29,
+      "uY": 20,
+      "label": "VCC"
+    },
+    {
+      "id": "connector27",
+      "uX": 29,
+      "uY": 12,
+      "label": "G1"
+    },
+    {
+      "id": "connector28",
+      "uX": 29,
+      "uY": -4,
+      "label": "E"
+    },
+    {
+      "id": "connector29",
+      "uX": 29,
+      "uY": -12,
+      "label": "D1"
+    },
+    {
+      "id": "connector30",
+      "uX": 29,
+      "uY": -20,
+      "label": "N"
+    },
+    {
+      "id": "connector31",
+      "uX": 29,
+      "uY": -28,
+      "label": "M"
+    },
+    {
+      "id": "connector32",
+      "uX": -27,
+      "uY": -28,
+      "label": "13"
+    },
+    {
+      "id": "connector33",
+      "uX": -27,
+      "uY": -20,
+      "label": "D2"
+    },
+    {
+      "id": "connector34",
+      "uX": -27,
+      "uY": -12,
+      "label": "L"
+    },
+    {
+      "id": "connector35",
+      "uX": -27,
+      "uY": -4,
+      "label": "C"
+    },
+    {
+      "id": "connector36",
+      "uX": -27,
+      "uY": 12,
+      "label": "VCC"
+    },
+    {
+      "id": "connector37",
+      "uX": -27,
+      "uY": 20,
+      "label": "G2"
+    },
+    {
+      "id": "connector38",
+      "uX": -27,
+      "uY": 36,
+      "label": "B"
+    },
+    {
+      "id": "connector39",
+      "uX": -27,
+      "uY": 44,
+      "label": "A2"
+    },
+    {
+      "id": "connector40",
+      "uX": -27,
+      "uY": 52,
+      "label": "K"
+    },
+    {
+      "id": "connector41",
+      "uX": -27,
+      "uY": 60,
+      "label": "J"
+    }
+  ]
+}

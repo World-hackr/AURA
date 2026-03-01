@@ -1,0 +1,34 @@
+{
+  "type": "duo_led_rg",
+  "label": "Bi-Color LED (Red/Green)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/DUO_LED_RG_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 26,
+  "uH": 36,
+  "originX": 13.0,
+  "originY": 18.0,
+  "pins": [
+    {
+      "id": "connector4",
+      "uX": 8,
+      "uY": -18,
+      "label": "green anode"
+    },
+    {
+      "id": "connector0",
+      "uX": -8,
+      "uY": -18,
+      "label": "red anode"
+    },
+    {
+      "id": "connector1",
+      "uX": 0,
+      "uY": -18,
+      "label": "common cathode"
+    }
+  ]
+}

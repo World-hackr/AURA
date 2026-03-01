@@ -1,0 +1,70 @@
+{
+  "type": "nokia6100_lcd",
+  "label": "Nokia 6100 LCD Breakout",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/sparkfun-displays_nokia6100_lcd_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 128,
+  "uH": 176,
+  "originX": 64.0,
+  "originY": 88.0,
+  "pins": [
+    {
+      "id": "connector4",
+      "uX": -46,
+      "uY": 70,
+      "label": "CS"
+    },
+    {
+      "id": "connector2",
+      "uX": -46,
+      "uY": 70,
+      "label": "DIO"
+    },
+    {
+      "id": "connector7",
+      "uX": -46,
+      "uY": 70,
+      "label": "GND"
+    },
+    {
+      "id": "connector8",
+      "uX": -46,
+      "uY": 70,
+      "label": "LEDGND"
+    },
+    {
+      "id": "connector1",
+      "uX": -46,
+      "uY": 70,
+      "label": "RESET"
+    },
+    {
+      "id": "connector3",
+      "uX": -46,
+      "uY": 70,
+      "label": "SCK"
+    },
+    {
+      "id": "connector0",
+      "uX": -46,
+      "uY": 70,
+      "label": "VDIGITAL"
+    },
+    {
+      "id": "connector5",
+      "uX": -46,
+      "uY": 70,
+      "label": "VDISPLAY"
+    },
+    {
+      "id": "connector9",
+      "uX": -46,
+      "uY": 70,
+      "label": "VLED"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "lilypad_led",
+  "label": "LilyPad LED",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/LilyPad_LED-v14_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 16,
+  "uH": 40,
+  "originX": 8.0,
+  "originY": 20.0,
+  "pins": [
+    {
+      "id": "connector2",
+      "uX": 0,
+      "uY": -14,
+      "label": "+"
+    },
+    {
+      "id": "connector3",
+      "uX": 0,
+      "uY": 14,
+      "label": "-"
+    }
+  ]
+}

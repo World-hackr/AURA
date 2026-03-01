@@ -1,0 +1,52 @@
+{
+  "type": "led_rgb_6pin",
+  "label": "RGB LED (6-Pin)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/led-rgb-6pin-leg.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 18,
+  "uH": 52,
+  "originX": 9.0,
+  "originY": 26.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -8,
+      "uY": -25,
+      "label": "Blue1"
+    },
+    {
+      "id": "connector1",
+      "uX": -1,
+      "uY": -25,
+      "label": "GND"
+    },
+    {
+      "id": "connector2",
+      "uX": 7,
+      "uY": -25,
+      "label": "Green"
+    },
+    {
+      "id": "connector3",
+      "uX": 7,
+      "uY": 0,
+      "label": "Blue2"
+    },
+    {
+      "id": "connector4",
+      "uX": -1,
+      "uY": 0,
+      "label": "GND"
+    },
+    {
+      "id": "connector5",
+      "uX": 7,
+      "uY": 0,
+      "label": "Red"
+    }
+  ]
+}

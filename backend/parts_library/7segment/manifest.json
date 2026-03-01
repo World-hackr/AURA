@@ -1,0 +1,76 @@
+{
+  "type": "7segment",
+  "label": "7-Segment Display (Standard 18mm)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/7-segment display.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 38,
+  "uH": 59,
+  "originX": 19.0,
+  "originY": 29.5,
+  "pins": [
+    {
+      "id": "connector7",
+      "uX": 0,
+      "uY": 28,
+      "label": "commAnode"
+    },
+    {
+      "id": "connector8",
+      "uX": -8,
+      "uY": 28,
+      "label": "cathodeF"
+    },
+    {
+      "id": "connector9",
+      "uX": -16,
+      "uY": 28,
+      "label": "cathodeG"
+    },
+    {
+      "id": "connector0",
+      "uX": -16,
+      "uY": -28,
+      "label": "cathodeE"
+    },
+    {
+      "id": "connector1",
+      "uX": -8,
+      "uY": -28,
+      "label": "cathodeD"
+    },
+    {
+      "id": "connector2",
+      "uX": 0,
+      "uY": -28,
+      "label": "commAnode"
+    },
+    {
+      "id": "connector3",
+      "uX": 8,
+      "uY": -28,
+      "label": "cathodeC"
+    },
+    {
+      "id": "connector4",
+      "uX": 16,
+      "uY": -28,
+      "label": "cathodeDP"
+    },
+    {
+      "id": "connector5",
+      "uX": 16,
+      "uY": 28,
+      "label": "cathodeB"
+    },
+    {
+      "id": "connector6",
+      "uX": 8,
+      "uY": 28,
+      "label": "cathodeA"
+    }
+  ]
+}

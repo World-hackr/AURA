@@ -1,0 +1,124 @@
+{
+  "type": "16segment",
+  "label": "16-segment display",
+  "category": "Uncategorized",
+  "views": {
+    "breadboard": "assets/16-segment display.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 52,
+  "uH": 81,
+  "originX": 26.0,
+  "originY": 40.5,
+  "pins": [
+    {
+      "id": "connector15",
+      "uX": 24,
+      "uY": 16,
+      "label": "anodeM"
+    },
+    {
+      "id": "connector7",
+      "uX": -24,
+      "uY": -24,
+      "label": "anodeR"
+    },
+    {
+      "id": "connector16",
+      "uX": 24,
+      "uY": 24,
+      "label": "commCathode"
+    },
+    {
+      "id": "connector8",
+      "uX": -24,
+      "uY": -32,
+      "label": "anodeN"
+    },
+    {
+      "id": "connector17",
+      "uX": 24,
+      "uY": 32,
+      "label": "anodeK"
+    },
+    {
+      "id": "connector9",
+      "uX": 24,
+      "uY": -32,
+      "label": "anodeD1"
+    },
+    {
+      "id": "connector0",
+      "uX": -24,
+      "uY": 32,
+      "label": "anodeA2"
+    },
+    {
+      "id": "connector1",
+      "uX": -24,
+      "uY": 24,
+      "label": "anodeA1"
+    },
+    {
+      "id": "connector10",
+      "uX": 24,
+      "uY": -24,
+      "label": "anodeD2"
+    },
+    {
+      "id": "connector2",
+      "uX": -24,
+      "uY": 16,
+      "label": "anodeF"
+    },
+    {
+      "id": "connector11",
+      "uX": 24,
+      "uY": -16,
+      "label": "commCathode"
+    },
+    {
+      "id": "connector3",
+      "uX": -24,
+      "uY": 8,
+      "label": "anodeH"
+    },
+    {
+      "id": "connector4",
+      "uX": -24,
+      "uY": 0,
+      "label": "anodeE"
+    },
+    {
+      "id": "connector12",
+      "uX": 24,
+      "uY": -8,
+      "label": "anodeC"
+    },
+    {
+      "id": "connector5",
+      "uX": -24,
+      "uY": -8,
+      "label": "anodeJ"
+    },
+    {
+      "id": "connector13",
+      "uX": 24,
+      "uY": 0,
+      "label": "anodeG"
+    },
+    {
+      "id": "connector6",
+      "uX": -24,
+      "uY": -16,
+      "label": "anodeP"
+    },
+    {
+      "id": "connector14",
+      "uX": 24,
+      "uY": 8,
+      "label": "anodeB"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "type": "ws2812",
+  "label": "WS2812 RGB LED (SMD)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/sparkfun-led-WS2812_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 24,
+  "uH": 48,
+  "originX": 12.0,
+  "originY": 24.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -46,
+      "uY": 351,
+      "label": "DOut"
+    },
+    {
+      "id": "connector1",
+      "uX": -149,
+      "uY": 351,
+      "label": "DIn"
+    },
+    {
+      "id": "connector2",
+      "uX": -252,
+      "uY": 351,
+      "label": "VCC"
+    },
+    {
+      "id": "connector3",
+      "uX": -252,
+      "uY": 58,
+      "label": "NC"
+    },
+    {
+      "id": "connector4",
+      "uX": -149,
+      "uY": 58,
+      "label": "VDD"
+    },
+    {
+      "id": "connector5",
+      "uX": -157,
+      "uY": 58,
+      "label": "VSS"
+    }
+  ]
+}

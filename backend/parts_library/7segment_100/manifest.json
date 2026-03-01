@@ -1,0 +1,76 @@
+{
+  "type": "7segment_100",
+  "label": "7-Segment Display (Large 1.0 inch)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/7segment_100.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 284,
+  "uH": 386,
+  "originX": 142.0,
+  "originY": 193.0,
+  "pins": [
+    {
+      "id": "connector1",
+      "uX": -32,
+      "uY": -168,
+      "label": "Segment E"
+    },
+    {
+      "id": "connector2",
+      "uX": -16,
+      "uY": -168,
+      "label": "Segment D"
+    },
+    {
+      "id": "connector3",
+      "uX": 0,
+      "uY": -168,
+      "label": "common anode"
+    },
+    {
+      "id": "connector4",
+      "uX": 16,
+      "uY": -168,
+      "label": "Segment C"
+    },
+    {
+      "id": "connector5",
+      "uX": 32,
+      "uY": -168,
+      "label": "Segment DP"
+    },
+    {
+      "id": "connector6",
+      "uX": 32,
+      "uY": 169,
+      "label": "Segment B"
+    },
+    {
+      "id": "connector7",
+      "uX": 16,
+      "uY": 169,
+      "label": "Segment A"
+    },
+    {
+      "id": "connector8",
+      "uX": 0,
+      "uY": 169,
+      "label": "common anode"
+    },
+    {
+      "id": "connector9",
+      "uX": -16,
+      "uY": 169,
+      "label": "Segment F"
+    },
+    {
+      "id": "connector10",
+      "uX": -32,
+      "uY": 169,
+      "label": "Segment G"
+    }
+  ]
+}

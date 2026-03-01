@@ -1,0 +1,88 @@
+{
+  "type": "led_matrix_tx07",
+  "label": "8x8 LED Matrix (18mm)",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/LED_Matrix_Kingbright_TX07-11.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 40,
+  "uH": 57,
+  "originX": 20.0,
+  "originY": 28.5,
+  "pins": [
+    {
+      "id": "connector1",
+      "uX": -12,
+      "uY": 20,
+      "label": "Column 1"
+    },
+    {
+      "id": "connector2",
+      "uX": -12,
+      "uY": 12,
+      "label": "Row 3"
+    },
+    {
+      "id": "connector3",
+      "uX": -12,
+      "uY": 4,
+      "label": "Column 2"
+    },
+    {
+      "id": "connector4",
+      "uX": -12,
+      "uY": -4,
+      "label": "Row 5"
+    },
+    {
+      "id": "connector5",
+      "uX": -12,
+      "uY": -12,
+      "label": "Row 6"
+    },
+    {
+      "id": "connector6",
+      "uX": -12,
+      "uY": -20,
+      "label": "Row 7"
+    },
+    {
+      "id": "connector7",
+      "uX": 12,
+      "uY": -20,
+      "label": "Column 4"
+    },
+    {
+      "id": "connector8",
+      "uX": 12,
+      "uY": -12,
+      "label": "Column 5"
+    },
+    {
+      "id": "connector9",
+      "uX": 12,
+      "uY": -4,
+      "label": "Row 4"
+    },
+    {
+      "id": "connector10",
+      "uX": 12,
+      "uY": 4,
+      "label": "Column 3"
+    },
+    {
+      "id": "connector11",
+      "uX": 12,
+      "uY": 12,
+      "label": "Row 2"
+    },
+    {
+      "id": "connector12",
+      "uX": 12,
+      "uY": 20,
+      "label": "Row 1"
+    }
+  ]
+}

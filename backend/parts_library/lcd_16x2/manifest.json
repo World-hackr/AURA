@@ -1,0 +1,112 @@
+{
+  "type": "lcd_16x2",
+  "label": "Character LCD 16x2",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/sparkfun-displays_lcd-16x2_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 253,
+  "uH": 114,
+  "originX": 126.5,
+  "originY": 57.0,
+  "pins": [
+    {
+      "id": "connector14",
+      "uX": 11,
+      "uY": 49,
+      "label": "A"
+    },
+    {
+      "id": "connector6",
+      "uX": -53,
+      "uY": 49,
+      "label": "DB0"
+    },
+    {
+      "id": "connector7",
+      "uX": -45,
+      "uY": 49,
+      "label": "DB1"
+    },
+    {
+      "id": "connector8",
+      "uX": -37,
+      "uY": 49,
+      "label": "DB2"
+    },
+    {
+      "id": "connector9",
+      "uX": -29,
+      "uY": 49,
+      "label": "DB3"
+    },
+    {
+      "id": "connector10",
+      "uX": -21,
+      "uY": 49,
+      "label": "DB4"
+    },
+    {
+      "id": "connector11",
+      "uX": -13,
+      "uY": 49,
+      "label": "DB5"
+    },
+    {
+      "id": "connector12",
+      "uX": -5,
+      "uY": 49,
+      "label": "DB6"
+    },
+    {
+      "id": "connector13",
+      "uX": 3,
+      "uY": 49,
+      "label": "DB7"
+    },
+    {
+      "id": "connector5",
+      "uX": -61,
+      "uY": 49,
+      "label": "E"
+    },
+    {
+      "id": "connector15",
+      "uX": 19,
+      "uY": 49,
+      "label": "K"
+    },
+    {
+      "id": "connector4",
+      "uX": -69,
+      "uY": 49,
+      "label": "R_W"
+    },
+    {
+      "id": "connector3",
+      "uX": -77,
+      "uY": 49,
+      "label": "RS"
+    },
+    {
+      "id": "connector1",
+      "uX": -93,
+      "uY": 49,
+      "label": "VDD"
+    },
+    {
+      "id": "connector2",
+      "uX": -85,
+      "uY": 49,
+      "label": "VO"
+    },
+    {
+      "id": "connector0",
+      "uX": -101,
+      "uY": 49,
+      "label": "VSS"
+    }
+  ]
+}

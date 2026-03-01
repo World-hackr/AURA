@@ -1,0 +1,112 @@
+{
+  "type": "oled_wemos_d1_mini",
+  "label": "Wemos D1 Mini OLED",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/WeMos-D1-mini-OLED-Shield-no-headers_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 81,
+  "uH": 89,
+  "originX": 40.5,
+  "originY": 44.5,
+  "pins": [
+    {
+      "id": "rst",
+      "uX": -36,
+      "uY": 40,
+      "label": "RST"
+    },
+    {
+      "id": "a0",
+      "uX": -36,
+      "uY": 32,
+      "label": "A0"
+    },
+    {
+      "id": "d0",
+      "uX": -36,
+      "uY": 24,
+      "label": "D0"
+    },
+    {
+      "id": "d5",
+      "uX": -36,
+      "uY": 16,
+      "label": "D5"
+    },
+    {
+      "id": "d6",
+      "uX": -36,
+      "uY": 8,
+      "label": "D6"
+    },
+    {
+      "id": "d7",
+      "uX": -36,
+      "uY": 0,
+      "label": "D7"
+    },
+    {
+      "id": "d8",
+      "uX": -36,
+      "uY": -8,
+      "label": "D8"
+    },
+    {
+      "id": "3v3",
+      "uX": -36,
+      "uY": -16,
+      "label": "3V3"
+    },
+    {
+      "id": "5v",
+      "uX": -36,
+      "uY": -16,
+      "label": "5V"
+    },
+    {
+      "id": "g",
+      "uX": -36,
+      "uY": -8,
+      "label": "G"
+    },
+    {
+      "id": "d4",
+      "uX": -36,
+      "uY": 0,
+      "label": "D4"
+    },
+    {
+      "id": "d3",
+      "uX": -36,
+      "uY": 8,
+      "label": "D3"
+    },
+    {
+      "id": "d2",
+      "uX": -36,
+      "uY": 16,
+      "label": "D2"
+    },
+    {
+      "id": "d1",
+      "uX": -36,
+      "uY": 24,
+      "label": "D1"
+    },
+    {
+      "id": "rx",
+      "uX": -36,
+      "uY": 32,
+      "label": "RX"
+    },
+    {
+      "id": "tx",
+      "uX": -36,
+      "uY": 40,
+      "label": "TX"
+    }
+  ]
+}

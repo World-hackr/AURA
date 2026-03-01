@@ -1,0 +1,40 @@
+{
+  "type": "oled_grove_128x96",
+  "label": "Grove OLED 128x96",
+  "category": "Optoelectronics",
+  "views": {
+    "breadboard": "assets/seeed_grove_oled_128x96_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 170,
+  "uH": 90,
+  "originX": 85.0,
+  "originY": 45.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -85,
+      "uY": 45,
+      "label": "GND"
+    },
+    {
+      "id": "connector1",
+      "uX": -85,
+      "uY": 45,
+      "label": "VCC"
+    },
+    {
+      "id": "connector2",
+      "uX": -85,
+      "uY": 45,
+      "label": "SDA"
+    },
+    {
+      "id": "connector3",
+      "uX": -85,
+      "uY": 45,
+      "label": "SCL"
+    }
+  ]
+}
