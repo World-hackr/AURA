@@ -1,100 +1,41 @@
 {
   "type": "7segment_4digit",
-  "label": "4-Digit 7-Segment Display",
+  "label": "4-Digit 7-Segment Display (0.56\")",
   "category": "Optoelectronics",
+  "sub_category": "Displays",
   "views": {
     "breadboard": "assets/sparkfun-displays_7-segment-4digit_breadboard.svg",
     "schematic": null,
     "pcb": null
   },
-  "uW": 127,
-  "uH": 41,
-  "originX": 63.5,
-  "originY": 20.5,
+  "uW": 144,
+  "uH": 48,
+  "originX": 72.0,
+  "originY": 24.0,
   "pins": [
-    {
-      "id": "connector0",
-      "uX": -28,
-      "uY": -16,
-      "label": "1"
-    },
-    {
-      "id": "connector9",
-      "uX": 12,
-      "uY": 16,
-      "label": "11"
-    },
-    {
-      "id": "connector10",
-      "uX": -4,
-      "uY": 16,
-      "label": "13"
-    },
-    {
-      "id": "connector11",
-      "uX": -12,
-      "uY": 16,
-      "label": "14"
-    },
-    {
-      "id": "connector12",
-      "uX": -20,
-      "uY": 16,
-      "label": "15"
-    },
-    {
-      "id": "connector13",
-      "uX": -28,
-      "uY": 16,
-      "label": "16"
-    },
-    {
-      "id": "connector1",
-      "uX": -20,
-      "uY": -16,
-      "label": "2"
-    },
-    {
-      "id": "connector2",
-      "uX": -12,
-      "uY": -16,
-      "label": "3"
-    },
-    {
-      "id": "connector3",
-      "uX": -4,
-      "uY": -16,
-      "label": "4"
-    },
-    {
-      "id": "connector4",
-      "uX": 4,
-      "uY": -16,
-      "label": "5"
-    },
-    {
-      "id": "connector5",
-      "uX": 12,
-      "uY": -16,
-      "label": "6"
-    },
-    {
-      "id": "connector6",
-      "uX": 20,
-      "uY": -16,
-      "label": "7"
-    },
-    {
-      "id": "connector7",
-      "uX": 28,
-      "uY": -16,
-      "label": "8"
-    },
-    {
-      "id": "connector8",
-      "uX": 28,
-      "uY": 16,
-      "label": "9"
-    }
+    { "id": "connector13", "uX": -32, "uY": 24, "label": "DIG1" },
+    { "id": "connector12", "uX": -24, "uY": 24, "label": "A" },
+    { "id": "connector11", "uX": -16, "uY": 24, "label": "F" },
+    { "id": "connector10", "uX": -8, "uY": 24, "label": "DIG2" },
+    { "id": "connector9", "uX": 8, "uY": 24, "label": "DIG3" },
+    { "id": "connector8", "uX": 24, "uY": 24, "label": "B" },
+    { "id": "connector0", "uX": -32, "uY": -24, "label": "E" },
+    { "id": "connector1", "uX": -24, "uY": -24, "label": "D" },
+    { "id": "connector2", "uX": -16, "uY": -24, "label": "DP" },
+    { "id": "connector3", "uX": -8, "uY": -24, "label": "C" },
+    { "id": "connector4", "uX": 8, "uY": -24, "label": "G" },
+    { "id": "connector5", "uX": 16, "uY": -24, "label": "DIG4" },
+    { "id": "connector6", "uX": 24, "uY": -24, "label": "COLON_C" },
+    { "id": "connector7", "uX": 32, "uY": -24, "label": "COLON_A" }
+  ],
+  "interactive": [
+    { "type": "led", "action": "d1a", "id": "d1_segA", "label": "Digit 1 Segment A" },
+    { "type": "led", "action": "d1b", "id": "d1_segB", "label": "Digit 1 Segment B" },
+    { "type": "led", "action": "d1c", "id": "d1_segC", "label": "Digit 1 Segment C" },
+    { "type": "led", "action": "d1d", "id": "d1_segD", "label": "Digit 1 Segment D" },
+    { "type": "led", "action": "d1e", "id": "d1_segE", "label": "Digit 1 Segment E" },
+    { "type": "led", "action": "d1f", "id": "d1_segF", "label": "Digit 1 Segment F" },
+    { "type": "led", "action": "d1g", "id": "d1_segG", "label": "Digit 1 Segment G" },
+    { "type": "led", "action": "colon", "id": "dots_colon", "label": "Colon" }
   ]
 }

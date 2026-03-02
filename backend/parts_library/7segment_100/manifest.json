@@ -1,6 +1,6 @@
 {
   "type": "7segment_100",
-  "label": "7-Segment Display (Large 1.0 inch)",
+  "label": "7-Segment Display (Large)",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/7segment_100.svg",
@@ -16,61 +16,62 @@
       "id": "connector1",
       "uX": -32,
       "uY": -168,
-      "label": "Segment E"
+      "label": "SEGMENT E"
     },
     {
       "id": "connector2",
       "uX": -16,
       "uY": -168,
-      "label": "Segment D"
+      "label": "SEGMENT D"
     },
     {
       "id": "connector3",
       "uX": 0,
       "uY": -168,
-      "label": "common anode"
+      "label": "COMMON ANODE"
     },
     {
       "id": "connector4",
       "uX": 16,
       "uY": -168,
-      "label": "Segment C"
+      "label": "SEGMENT C"
     },
     {
       "id": "connector5",
       "uX": 32,
       "uY": -168,
-      "label": "Segment DP"
+      "label": "SEGMENT DP"
     },
     {
       "id": "connector6",
       "uX": 32,
       "uY": 169,
-      "label": "Segment B"
+      "label": "SEGMENT B"
     },
     {
       "id": "connector7",
       "uX": 16,
       "uY": 169,
-      "label": "Segment A"
+      "label": "SEGMENT A"
     },
     {
       "id": "connector8",
       "uX": 0,
       "uY": 169,
-      "label": "common anode"
+      "label": "COMMON ANODE"
     },
     {
       "id": "connector9",
       "uX": -16,
       "uY": 169,
-      "label": "Segment F"
+      "label": "SEGMENT F"
     },
     {
       "id": "connector10",
       "uX": -32,
       "uY": 169,
-      "label": "Segment G"
+      "label": "SEGMENT G"
     }
-  ]
+  ],
+  "sub_category": "Displays"
 }

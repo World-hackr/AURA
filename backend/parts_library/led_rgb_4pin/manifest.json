@@ -1,6 +1,6 @@
 {
   "type": "led_rgb_4pin",
-  "label": "RGB LED (4-Pin)",
+  "label": "RGB LED (4-pin)",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/led-rgb-4pin-anode-leg.svg",
@@ -16,25 +16,34 @@
       "id": "connector0",
       "uX": -12,
       "uY": -7,
-      "label": "red cathode"
+      "label": "RED CATHODE"
     },
     {
       "id": "connector1",
       "uX": -4,
       "uY": -7,
-      "label": "common anode"
+      "label": "COMMON ANODE"
     },
     {
       "id": "connector2",
       "uX": 4,
       "uY": -7,
-      "label": "green cathode"
+      "label": "GREEN CATHODE"
     },
     {
       "id": "connector3",
       "uX": 12,
       "uY": -7,
-      "label": "blue cathode"
+      "label": "BLUE CATHODE"
+    }
+  ],
+  "sub_category": "LEDs",
+  "interactive": [
+    {
+      "type": "rgb",
+      "action": "glow",
+      "id": "led_glow",
+      "label": "RGB Lens"
     }
   ]
 }

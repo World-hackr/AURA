@@ -1,6 +1,6 @@
 {
   "type": "lcd_16x2",
-  "label": "Character LCD 16x2",
+  "label": "16x2 Character LCD (HD44780)",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/sparkfun-displays_lcd-16x2_breadboard.svg",
@@ -16,7 +16,7 @@
       "id": "connector14",
       "uX": 11,
       "uY": 49,
-      "label": "A"
+      "label": "ANODE"
     },
     {
       "id": "connector6",
@@ -76,13 +76,13 @@
       "id": "connector15",
       "uX": 19,
       "uY": 49,
-      "label": "K"
+      "label": "CATHODE"
     },
     {
       "id": "connector4",
       "uX": -69,
       "uY": 49,
-      "label": "R_W"
+      "label": "RW"
     },
     {
       "id": "connector3",
@@ -94,7 +94,7 @@
       "id": "connector1",
       "uX": -93,
       "uY": 49,
-      "label": "VDD"
+      "label": "VDD (5V)"
     },
     {
       "id": "connector2",
@@ -106,7 +106,7 @@
       "id": "connector0",
       "uX": -101,
       "uY": 49,
-      "label": "VSS"
+      "label": "VSS (GND)"
     }
   ]
 }

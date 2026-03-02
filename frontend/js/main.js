@@ -366,7 +366,7 @@ function draw() {
     drawAllComponents();
     if (placingComponent) drawGhost();
     if (hoveredPin) drawPinLabel(hoveredPin);
-    drawScale();
+    drawRulers();
 }
 
 function drawGrid() {
@@ -472,7 +472,7 @@ function drawPinLabel(pin) {
     ctx.restore();
 }
 
-function drawScale() {
+function drawRulers() {
     const frame = document.getElementById("workspace-frame");
     const container = document.getElementById("workspace-container");
     if (!frame || !container) return;
@@ -513,12 +513,12 @@ function drawScale() {
     scaleCtx.textAlign = "center";
     for(let x = Math.ceil(-offsetX / spacing) * spacing + offsetX; x < rect.width; x += spacing) {
         if (x < -1) continue;
-        scaleCtx.fillText(Math.round((x - offsetX) / pxPerU) + "u", startX + x, startY + rect.height + 20);
+        scaleCtx.fillText(Math.round((x - offsetX) / pxPerU) + "u", startX + x, startY + rect.height + 16);
     }
     scaleCtx.textAlign = "right";
     for(let y = Math.ceil(-offsetY / spacing) * spacing + offsetY; y < rect.height; y += spacing) {
         if (y < -1) continue;
-        scaleCtx.fillText(Math.round((offsetY - y) / pxPerU) + "u", startX - 12, startY + y + 4);
+        scaleCtx.fillText(Math.round((offsetY - y) / pxPerU) + "u", startX - 8, startY + y + 4);
     }
 }
 

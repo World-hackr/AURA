@@ -1,6 +1,6 @@
 {
   "type": "rgb_matrix_v25",
-  "label": "RGB LED Matrix (Serial)",
+  "label": "RGB LED Matrix",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/RGB_matrix_v25_breadboard.svg",
@@ -84,5 +84,6 @@
       "uY": -91,
       "label": "VCC"
     }
-  ]
+  ],
+  "sub_category": "Displays"
 }

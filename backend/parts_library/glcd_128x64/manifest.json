@@ -1,7 +1,7 @@
 {
   "type": "glcd_128x64",
   "label": "Graphic LCD 128x64",
-  "category": "Uncategorized",
+  "category": "Other",
   "views": {
     "breadboard": "assets/GLCD_128x64.svg",
     "schematic": null,
@@ -34,7 +34,7 @@
       "id": "connector0",
       "uX": -183,
       "uY": 138,
-      "label": "1 Vss"
+      "label": "1 VSS"
     },
     {
       "id": "connector9",
@@ -88,7 +88,7 @@
       "id": "connector17",
       "uX": -183,
       "uY": 138,
-      "label": "18 Vout"
+      "label": "18 VOUT"
     },
     {
       "id": "connector18",
@@ -106,13 +106,13 @@
       "id": "connector1",
       "uX": -183,
       "uY": 138,
-      "label": "2 Vdd"
+      "label": "2 VDD"
     },
     {
       "id": "connector2",
       "uX": -183,
       "uY": 138,
-      "label": "3 Vo"
+      "label": "3 VO"
     },
     {
       "id": "connector3",
@@ -130,7 +130,8 @@
       "id": "connector5",
       "uX": -183,
       "uY": 138,
-      "label": "6 Enable"
+      "label": "6 ENABLE"
     }
-  ]
+  ],
+  "sub_category": "Displays"
 }

@@ -1,6 +1,6 @@
 {
   "type": "led_5mm",
-  "label": "LED (5mm)",
+  "label": "Red LED - 5mm",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/LED-5mm-red-leg.svg",
@@ -16,13 +16,21 @@
       "id": "connector0",
       "uX": -2,
       "uY": -24,
-      "label": "cathode"
+      "label": "CATHODE"
     },
     {
       "id": "connector1",
       "uX": 10,
       "uY": -24,
-      "label": "anode"
+      "label": "ANODE"
+    }
+  ],
+  "interactive": [
+    {
+      "type": "led",
+      "action": "glow",
+      "id": "led_glow",
+      "label": "LED Lens"
     }
   ]
 }

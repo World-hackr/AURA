@@ -47,7 +47,7 @@
 			</g>
 			<rect x="3.714" y="14.36" fill="#E6E6E6" width="14.172" height="14.174"/>
 			<circle fill="#CCCCCC" cx="10.801" cy="21.633" r="5.613"/>
-			<circle fill="#E6E6E6" cx="10.801" cy="21.633" r="4.796"/>
+			<circle id="led_glow" fill="#E6E6E6" cx="10.801" cy="21.633" r="4.796"/>
 			<g>
 				<g>
 					<g>

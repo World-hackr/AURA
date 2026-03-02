@@ -1,6 +1,7 @@
 {
   "type": "arduino_pro_mini",
   "label": "Arduino Pro Mini (5V)",
+  "category": "Microcontroller",
   "views": {
     "breadboard": "assets/breadboard.svg",
     "schematic": null,
@@ -8,22 +9,8 @@
   },
   "uW": 56,
   "uH": 104,
-  "originX": 28,
-  "originY": 52,
-  "indicators": [
-    {
-      "id": "PWR",
-      "uX": 20,
-      "uY": 34,
-      "color": "#ff3333"
-    },
-    {
-      "id": "L",
-      "uX": 20,
-      "uY": 28,
-      "color": "#33ff33"
-    }
-  ],
+  "originX": 28.0,
+  "originY": 52.0,
   "pins": [
     {
       "id": "connector14",
@@ -35,13 +22,13 @@
       "id": "connector15",
       "uX": 12,
       "uY": 48,
-      "label": "TXO"
+      "label": "TX"
     },
     {
       "id": "connector16",
       "uX": 4,
       "uY": 48,
-      "label": "RXI"
+      "label": "RX"
     },
     {
       "id": "connector17",
@@ -62,76 +49,28 @@
       "label": "GND"
     },
     {
-      "id": "connector48",
-      "uX": -24,
-      "uY": 40,
-      "label": "TXO"
+      "id": "connector20",
+      "uX": 15,
+      "uY": 4,
+      "label": "A4"
     },
     {
-      "id": "connector47",
-      "uX": -24,
-      "uY": 32,
-      "label": "RXI"
+      "id": "connector21",
+      "uX": 15,
+      "uY": 12,
+      "label": "A5"
     },
     {
-      "id": "connector46",
-      "uX": -24,
-      "uY": 24,
-      "label": "RESET"
+      "id": "connector22",
+      "uX": 15,
+      "uY": -28,
+      "label": "A6"
     },
     {
-      "id": "connector45",
-      "uX": -24,
-      "uY": 16,
-      "label": "GND"
-    },
-    {
-      "id": "connector44",
-      "uX": -24,
-      "uY": 8,
-      "label": "D2"
-    },
-    {
-      "id": "connector43",
-      "uX": -24,
-      "uY": 0,
-      "label": "D3"
-    },
-    {
-      "id": "connector42",
-      "uX": -24,
-      "uY": -8,
-      "label": "D4"
-    },
-    {
-      "id": "connector41",
-      "uX": -24,
-      "uY": -16,
-      "label": "D5"
-    },
-    {
-      "id": "connector40",
-      "uX": -24,
-      "uY": -24,
-      "label": "D6"
-    },
-    {
-      "id": "connector39",
-      "uX": -24,
-      "uY": -32,
-      "label": "D7"
-    },
-    {
-      "id": "connector38",
-      "uX": -24,
-      "uY": -40,
-      "label": "D8"
-    },
-    {
-      "id": "connector37",
-      "uX": -24,
-      "uY": -48,
-      "label": "D9"
+      "id": "connector23",
+      "uX": 15,
+      "uY": -20,
+      "label": "A7"
     },
     {
       "id": "connector25",
@@ -206,30 +145,76 @@
       "label": "D10"
     },
     {
-      "id": "connector20",
-      "uX": 14.8,
-      "uY": 4.4,
-      "label": "A4"
+      "id": "connector37",
+      "uX": -24,
+      "uY": -48,
+      "label": "D9"
     },
     {
-      "id": "connector21",
-      "uX": 14.8,
-      "uY": 12.4,
-      "label": "A5"
+      "id": "connector38",
+      "uX": -24,
+      "uY": -40,
+      "label": "D8"
     },
     {
-      "id": "connector22",
-      "uX": 14.8,
-      "uY": -28.2,
-      "label": "A6"
+      "id": "connector39",
+      "uX": -24,
+      "uY": -32,
+      "label": "D7"
     },
     {
-      "id": "connector23",
-      "uX": 14.8,
-      "uY": -20.2,
-      "label": "A7"
+      "id": "connector40",
+      "uX": -24,
+      "uY": -24,
+      "label": "D6"
+    },
+    {
+      "id": "connector41",
+      "uX": -24,
+      "uY": -16,
+      "label": "D5"
+    },
+    {
+      "id": "connector42",
+      "uX": -24,
+      "uY": -8,
+      "label": "D4"
+    },
+    {
+      "id": "connector43",
+      "uX": -24,
+      "uY": 0,
+      "label": "D3"
+    },
+    {
+      "id": "connector44",
+      "uX": -24,
+      "uY": 8,
+      "label": "D2"
+    },
+    {
+      "id": "connector45",
+      "uX": -24,
+      "uY": 16,
+      "label": "GND"
+    },
+    {
+      "id": "connector46",
+      "uX": -24,
+      "uY": 24,
+      "label": "RESET"
+    },
+    {
+      "id": "connector47",
+      "uX": -24,
+      "uY": 32,
+      "label": "RX"
+    },
+    {
+      "id": "connector48",
+      "uX": -24,
+      "uY": 40,
+      "label": "TX"
     }
-  ],
-  "category": "MCU",
-  "sub_category": "Modules"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "type": "led_3mm",
-  "label": "LED (3mm)",
+  "label": "Red LED - 3mm",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/LED-3mm-red-leg.svg",
@@ -16,13 +16,22 @@
       "id": "connector0",
       "uX": -3,
       "uY": -13,
-      "label": "cathode"
+      "label": "CATHODE"
     },
     {
       "id": "connector1",
       "uX": 5,
       "uY": -13,
-      "label": "anode"
+      "label": "ANODE"
+    }
+  ],
+  "sub_category": "LEDs",
+  "interactive": [
+    {
+      "type": "led",
+      "action": "glow",
+      "id": "led_glow",
+      "label": "LED Lens"
     }
   ]
 }

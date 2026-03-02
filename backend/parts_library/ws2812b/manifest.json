@@ -1,40 +1,49 @@
 {
   "type": "ws2812b",
-  "label": "WS2812B RGB LED",
+  "label": "SMD RGB LED (WS2812B)",
   "category": "Optoelectronics",
+  "sub_category": "LEDs",
   "views": {
-    "breadboard": "assets/ws2812b_breadboard.svg",
+    "breadboard": "assets/sparkfun-led-WS2812B_breadboard.svg",
     "schematic": null,
     "pcb": null
   },
-  "uW": 24,
-  "uH": 48,
-  "originX": 12.0,
-  "originY": 24.0,
+  "uW": 16,
+  "uH": 16,
+  "originX": 8.0,
+  "originY": 8.0,
   "pins": [
     {
-      "id": "connector0",
-      "uX": -46,
-      "uY": 351,
-      "label": "VDD"
+      "id": "connector2",
+      "uX": 6,
+      "uY": 6,
+      "label": "VDD (5V)"
     },
     {
-      "id": "connector1",
-      "uX": -252,
-      "uY": 351,
+      "id": "connector0",
+      "uX": -6,
+      "uY": -6,
       "label": "DOUT"
     },
     {
-      "id": "connector2",
-      "uX": -252,
-      "uY": 58,
-      "label": "VSS"
+      "id": "connector1",
+      "uX": -6,
+      "uY": 6,
+      "label": "DIN"
     },
     {
       "id": "connector3",
-      "uX": -157,
-      "uY": 58,
-      "label": "DIN"
+      "uX": 6,
+      "uY": -6,
+      "label": "VSS (GND)"
+    }
+  ],
+  "interactive": [
+    {
+      "type": "led",
+      "action": "glow",
+      "id": "led_glow",
+      "label": "RGB Diode"
     }
   ]
 }

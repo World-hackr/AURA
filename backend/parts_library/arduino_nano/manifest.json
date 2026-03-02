@@ -1,6 +1,7 @@
 {
   "type": "arduino_nano",
-  "label": "Arduino Nano v3 (ICSP)",
+  "label": "Arduino Nano V3.0 (ATmega328P)",
+  "category": "Microcontroller",
   "views": {
     "breadboard": "assets/breadboard.svg",
     "schematic": null,
@@ -8,34 +9,8 @@
   },
   "uW": 56,
   "uH": 142,
-  "originX": 28,
-  "originY": 71,
-  "indicators": [
-    {
-      "id": "PWR",
-      "uX": 12,
-      "uY": 34,
-      "color": "#ff3333"
-    },
-    {
-      "id": "L",
-      "uX": 24,
-      "uY": 34,
-      "color": "#33ff33"
-    },
-    {
-      "id": "TX",
-      "uX": -1,
-      "uY": 34,
-      "color": "#ffcc00"
-    },
-    {
-      "id": "RX",
-      "uX": 6,
-      "uY": 34,
-      "color": "#ffcc00"
-    }
-  ],
+  "originX": 28.0,
+  "originY": 71.0,
   "pins": [
     {
       "id": "connector16",
@@ -221,39 +196,37 @@
       "id": "connector55",
       "uX": 8,
       "uY": 67,
-      "label": "D12/MISO (ICSP)"
+      "label": "D12/MISO"
     },
     {
       "id": "connector56",
       "uX": 8,
       "uY": 59,
-      "label": "5V (ICSP)"
+      "label": "5V"
     },
     {
       "id": "connector57",
       "uX": 0,
       "uY": 67,
-      "label": "D13/SCK (ICSP)"
+      "label": "D13/SCK"
     },
     {
       "id": "connector58",
       "uX": 0,
       "uY": 59,
-      "label": "D11/MOSI (ICSP)"
+      "label": "D11/MOSI"
     },
     {
       "id": "connector59",
       "uX": -8,
       "uY": 67,
-      "label": "RESET (ICSP)"
+      "label": "RESET"
     },
     {
       "id": "connector60",
       "uX": -8,
       "uY": 59,
-      "label": "GND (ICSP)"
+      "label": "GND"
     }
-  ],
-  "category": "MCU",
-  "sub_category": "Modules"
+  ]
 }

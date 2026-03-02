@@ -1,7 +1,7 @@
 {
   "type": "alphanumeric_sparkfun",
-  "label": "Alphanumeric LED Display",
-  "category": "Uncategorized",
+  "label": "SparkFun Alphanumeric Display",
+  "category": "Other",
   "views": {
     "breadboard": "assets/sparkfun-displays_alphanumeric_breadboard.svg",
     "schematic": null,
@@ -132,5 +132,6 @@
       "uY": -1,
       "label": "VCC"
     }
-  ]
+  ],
+  "sub_category": "Displays"
 }

@@ -1,6 +1,6 @@
 {
   "type": "duo_led_rg",
-  "label": "Bi-Color LED (Red/Green)",
+  "label": "Bi-color LED (Red/Green)",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/DUO_LED_RG_breadboard.svg",
@@ -16,19 +16,20 @@
       "id": "connector4",
       "uX": 8,
       "uY": -18,
-      "label": "green anode"
+      "label": "GREEN ANODE"
     },
     {
       "id": "connector0",
       "uX": -8,
       "uY": -18,
-      "label": "red anode"
+      "label": "RED ANODE"
     },
     {
       "id": "connector1",
       "uX": 0,
       "uY": -18,
-      "label": "common cathode"
+      "label": "COMMON CATHODE"
     }
-  ]
+  ],
+  "sub_category": "LEDs"
 }

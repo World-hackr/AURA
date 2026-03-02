@@ -1,7 +1,7 @@
 {
   "type": "grove_4digit_display",
-  "label": "Grove 4 Digit Display",
-  "category": "Uncategorized",
+  "label": "Grove 4-Digit Display",
+  "category": "Other",
   "views": {
     "breadboard": "assets/seeed_grove_4digit_display_breadboard.svg",
     "schematic": null,
@@ -14,27 +14,28 @@
   "pins": [
     {
       "id": "connector0",
-      "uX": -78,
-      "uY": 9,
+      "uX": -82,
+      "uY": 45,
       "label": "GND"
     },
     {
       "id": "connector1",
-      "uX": -78,
-      "uY": 3,
+      "uX": -82,
+      "uY": 45,
       "label": "VCC"
     },
     {
       "id": "connector2",
-      "uX": -78,
-      "uY": -3,
+      "uX": -82,
+      "uY": 45,
       "label": "DIO"
     },
     {
       "id": "connector3",
-      "uX": -78,
-      "uY": -9,
+      "uX": -82,
+      "uY": 45,
       "label": "CLK"
     }
-  ]
+  ],
+  "sub_category": "Displays"
 }

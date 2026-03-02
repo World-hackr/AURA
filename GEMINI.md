@@ -35,6 +35,12 @@ The entire coordinate system is built on a fixed physical constant:
     - **Coordinate Stability:** Fixed coordinate display jitter using monospaced layout and minimum-width containers.
     - **Dynamic HUD:** Sleek top-center instruction pill for context-aware guidance (e.g., "PRESS R TO ROTATE").
 
+### 3.3 AI-Augmented Library & Digital Twin (March 2, 2026)
+- **AI-Powered Importer:** Integrated Google Gemini 2.0 Flash into `fritzing_importer.py`. The script now uses AI to cross-reference Fritzing metadata with official datasheets to fix pin labels and categories.
+- **Mass Library Aurification:** Successfully processed 25+ components, normalizing categories (Passive, Microcontroller, etc.) and pin names (e.g., `VSS` -> `GND`, `Terminal 1`).
+- **Interactive Component Mapping:** Introduced the "Digital Twin" metadata standard. Added `interactive` blocks to JSON manifests and injected specific IDs into SVGs (e.g., `led_glow`, `path_segA`) to allow real-time frontend animation.
+- **Coordinate Sanity Engine:** Implemented coordinate validation logic to detect and fix "floating pins" caused by complex Fritzing SVG transforms, ensuring all components snap perfectly to the $1u$ grid.
+
 ---
 
 ## 4. Environment Structure

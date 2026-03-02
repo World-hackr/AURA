@@ -1,7 +1,7 @@
 {
   "type": "16segment",
-  "label": "16-segment display",
-  "category": "Uncategorized",
+  "label": "16-Segment Display",
+  "category": "Other",
   "views": {
     "breadboard": "assets/16-segment display.svg",
     "schematic": null,
@@ -16,109 +16,110 @@
       "id": "connector15",
       "uX": 24,
       "uY": 16,
-      "label": "anodeM"
+      "label": "ANODEM"
     },
     {
       "id": "connector7",
       "uX": -24,
       "uY": -24,
-      "label": "anodeR"
+      "label": "ANODER"
     },
     {
       "id": "connector16",
       "uX": 24,
       "uY": 24,
-      "label": "commCathode"
+      "label": "COMMCATHODE"
     },
     {
       "id": "connector8",
       "uX": -24,
       "uY": -32,
-      "label": "anodeN"
+      "label": "ANODEN"
     },
     {
       "id": "connector17",
       "uX": 24,
       "uY": 32,
-      "label": "anodeK"
+      "label": "ANODEK"
     },
     {
       "id": "connector9",
       "uX": 24,
       "uY": -32,
-      "label": "anodeD1"
+      "label": "ANODED1"
     },
     {
       "id": "connector0",
       "uX": -24,
       "uY": 32,
-      "label": "anodeA2"
+      "label": "ANODEA2"
     },
     {
       "id": "connector1",
       "uX": -24,
       "uY": 24,
-      "label": "anodeA1"
+      "label": "ANODEA1"
     },
     {
       "id": "connector10",
       "uX": 24,
       "uY": -24,
-      "label": "anodeD2"
+      "label": "ANODED2"
     },
     {
       "id": "connector2",
       "uX": -24,
       "uY": 16,
-      "label": "anodeF"
+      "label": "ANODEF"
     },
     {
       "id": "connector11",
       "uX": 24,
       "uY": -16,
-      "label": "commCathode"
+      "label": "COMMCATHODE"
     },
     {
       "id": "connector3",
       "uX": -24,
       "uY": 8,
-      "label": "anodeH"
+      "label": "ANODEH"
     },
     {
       "id": "connector4",
       "uX": -24,
       "uY": 0,
-      "label": "anodeE"
+      "label": "ANODEE"
     },
     {
       "id": "connector12",
       "uX": 24,
       "uY": -8,
-      "label": "anodeC"
+      "label": "ANODEC"
     },
     {
       "id": "connector5",
       "uX": -24,
       "uY": -8,
-      "label": "anodeJ"
+      "label": "ANODEJ"
     },
     {
       "id": "connector13",
       "uX": 24,
       "uY": 0,
-      "label": "anodeG"
+      "label": "ANODEG"
     },
     {
       "id": "connector6",
       "uX": -24,
       "uY": -16,
-      "label": "anodeP"
+      "label": "ANODEP"
     },
     {
       "id": "connector14",
       "uX": 24,
       "uY": 8,
-      "label": "anodeB"
+      "label": "ANODEB"
     }
-  ]
+  ],
+  "sub_category": "Displays"
 }
