@@ -1,0 +1,50 @@
+import xml.etree.ElementTree as ET
+import re
+
+tree = ET.parse('backend/parts_library/arduino_pro_mini/assets/breadboard.svg')
+root = tree.getroot()
+
+def get_transforms(el, parent_map):
+    transforms = []
+    p = parent_map.get(el)
+    while p is not None:
+        t = p.attrib.get('transform')
+        if t:
+            match = re.search(r'matrix\(([^)]+)\)', t)
+            if match:
+                parts = [float(x) for x in match.group(1).replace(',', ' ').split()]
+                transforms.append(parts)
+        p = parent_map.get(p)
+    return transforms
+
+def apply_matrix(x, y, matrix):
+    a, b, c, d, e, f = matrix
+    return a*x + c*y + e, b*x + d*y + f
+
+parent_map = {c: p for p in root.iter() for c in p}
+
+targets = [
+    {'name': 'PWR', 'x': 36.9, 'y': 101.7},
+    {'name': 'L', 'x': 23.4, 'y': 45.9}
+]
+
+for el in root.iter():
+    tag = el.tag.split('}')[-1]
+    if tag in ['rect', 'path', 'polygon']:
+        cx, cy = 0, 0
+        if tag == 'rect':
+            cx = float(el.attrib.get('x', 0)) + float(el.attrib.get('width', 0))/2
+            cy = float(el.attrib.get('y', 0)) + float(el.attrib.get('height', 0))/2
+        elif tag == 'path':
+            d = el.attrib.get('d', '')
+            pts = re.findall(r'-?\d+\.?\d*', d)
+            if pts: cx, cy = float(pts[0]), float(pts[1])
+        
+        ts = get_transforms(el, parent_map)
+        for m in reversed(ts):
+            cx, cy = apply_matrix(cx, cy, m)
+            
+        for t in targets:
+            dist = (cx - t['x'])**2 + (cy - t['y'])**2
+            if dist < 20: # search within 4-5 pixels
+                print(f"Near {t['name']}: {tag}, id={el.attrib.get('id')}, fill={el.attrib.get('fill')}, center=({cx:.1f}, {cy:.1f})")

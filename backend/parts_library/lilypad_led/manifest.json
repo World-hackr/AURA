@@ -16,14 +16,13 @@
       "id": "connector2",
       "uX": 0,
       "uY": -14,
-      "label": "+"
+      "label": "VCC"
     },
     {
       "id": "connector3",
       "uX": 0,
       "uY": 14,
-      "label": "-"
+      "label": "GND"
     }
-  ],
-  "sub_category": "LEDs"
+  ]
 }

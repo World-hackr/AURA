@@ -13,14 +13,14 @@
   "pins": [
     {
       "id": "connector0",
-      "uX": -4,
-      "uY": -56,
+      "uX": -19,
+      "uY": 44,
       "label": "Terminal 1"
     },
     {
       "id": "connector1",
-      "uX": 4,
-      "uY": -56,
+      "uX": -19,
+      "uY": 52,
       "label": "Terminal 2"
     }
   ],

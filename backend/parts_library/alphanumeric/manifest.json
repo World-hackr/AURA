@@ -1,6 +1,6 @@
 {
   "type": "alphanumeric",
-  "label": "Alphanumeric Display Driver",
+  "label": "Serial Alphanumeric Display Driver",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/AlphaNumericDisplay-v13_breadboard.svg",
@@ -14,73 +14,73 @@
   "pins": [
     {
       "id": "connector4",
-      "uX": 10,
+      "uX": 46,
       "uY": -40,
       "label": "SDI"
     },
     {
       "id": "connector5",
-      "uX": 10,
+      "uX": 46,
       "uY": -48,
       "label": "CLK"
     },
     {
       "id": "connector6",
-      "uX": 10,
+      "uX": 46,
       "uY": -56,
       "label": "LE"
     },
     {
       "id": "connector7",
-      "uX": 10,
+      "uX": 46,
       "uY": -64,
       "label": "OE"
     },
     {
       "id": "connector8",
-      "uX": 10,
+      "uX": 46,
       "uY": -72,
       "label": "VCC"
     },
     {
       "id": "connector9",
-      "uX": 10,
+      "uX": 46,
       "uY": -80,
       "label": "GND"
     },
     {
       "id": "connector12",
-      "uX": -7,
+      "uX": -23,
       "uY": -40,
       "label": "SDO"
     },
     {
       "id": "connector13",
-      "uX": -7,
+      "uX": -23,
       "uY": -48,
       "label": "CLK"
     },
     {
       "id": "connector14",
-      "uX": -7,
+      "uX": -23,
       "uY": -56,
       "label": "LE"
     },
     {
       "id": "connector15",
-      "uX": -7,
+      "uX": -23,
       "uY": -64,
       "label": "OE"
     },
     {
       "id": "connector16",
-      "uX": -7,
+      "uX": -23,
       "uY": -72,
       "label": "VCC"
     },
     {
       "id": "connector17",
-      "uX": -7,
+      "uX": -23,
       "uY": -80,
       "label": "GND"
     },
@@ -204,6 +204,5 @@
       "uY": 60,
       "label": "J"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

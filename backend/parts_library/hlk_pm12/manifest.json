@@ -1,0 +1,40 @@
+{
+  "type": "hlk_pm12",
+  "label": "HLK-PM12",
+  "category": "Power",
+  "views": {
+    "breadboard": "assets/HLK-PM12.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 107,
+  "uH": 64,
+  "originX": 53.5,
+  "originY": 32.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -49,
+      "uY": 12,
+      "label": "AC 1"
+    },
+    {
+      "id": "connector1",
+      "uX": -48,
+      "uY": 0,
+      "label": "AC 2"
+    },
+    {
+      "id": "connector2",
+      "uX": 28,
+      "uY": 26,
+      "label": "-VO"
+    },
+    {
+      "id": "connector3",
+      "uX": 28,
+      "uY": -13,
+      "label": "+VO"
+    }
+  ]
+}

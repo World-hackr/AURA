@@ -1,0 +1,68 @@
+{
+  "type": "ic_lm358",
+  "label": "LM358 Op-Amp",
+  "category": "Microcontroller",
+  "sub_category": "ICs",
+  "views": {
+    "breadboard": "dynamic",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 24,
+  "uH": 36,
+  "originX": 12,
+  "originY": 18,
+  "pins": [
+    {
+      "id": "pin_1",
+      "uX": -12,
+      "uY": 14,
+      "label": "OUT A"
+    },
+    {
+      "id": "pin_2",
+      "uX": -12,
+      "uY": 6,
+      "label": "IN A-"
+    },
+    {
+      "id": "pin_3",
+      "uX": -12,
+      "uY": -2,
+      "label": "IN A+"
+    },
+    {
+      "id": "pin_4",
+      "uX": -12,
+      "uY": -10,
+      "label": "GND"
+    },
+    {
+      "id": "pin_5",
+      "uX": 12,
+      "uY": -10,
+      "label": "IN B+"
+    },
+    {
+      "id": "pin_6",
+      "uX": 12,
+      "uY": -2,
+      "label": "IN B-"
+    },
+    {
+      "id": "pin_7",
+      "uX": 12,
+      "uY": 6,
+      "label": "OUT B"
+    },
+    {
+      "id": "pin_8",
+      "uX": 12,
+      "uY": 14,
+      "label": "VCC"
+    }
+  ],
+  "interactive": {
+    "type": "ic"
+  }
+}

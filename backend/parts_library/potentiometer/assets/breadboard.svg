@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body -->
+  <rect x="0" y="0" width="16" height="16" rx="2" fill="#2c3e50" />
+  <rect x="1" y="1" width="14" height="14" rx="1.5" fill="#34495e" />
+  
+  <!-- Pins (Visual only) -->
+  <rect x="3.5" y="14" width="1" height="4" fill="#95a5a6" />
+  <rect x="7.5" y="14" width="1" height="4" fill="#95a5a6" />
+  <rect x="11.5" y="14" width="1" height="4" fill="#95a5a6" />
+
+  <!-- Dial Group -->
+  <g id="pot_dial">
+    <!-- Main Knob Body -->
+    <circle cx="8" cy="8" r="5.5" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="0.5" />
+    <!-- Knob Top Surface -->
+    <circle cx="8" cy="8" r="4.5" fill="#ecf0f1" />
+    <!-- Physical Notch Marker -->
+    <rect x="7.5" y="3" width="1" height="3" rx="0.5" fill="#e74c3c" />
+  </g>
+</svg>

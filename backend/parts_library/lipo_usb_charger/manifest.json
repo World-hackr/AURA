@@ -1,0 +1,40 @@
+{
+  "type": "lipo_usb_charger",
+  "label": "USB LiPoly Charger",
+  "category": "Power",
+  "views": {
+    "breadboard": "assets/LiPo-USB-Charger-v21_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 91,
+  "uH": 88,
+  "originX": 45.5,
+  "originY": 44.0,
+  "pins": [
+    {
+      "id": "connector8",
+      "uX": -27,
+      "uY": 13,
+      "label": "GND"
+    },
+    {
+      "id": "connector9",
+      "uX": -27,
+      "uY": 19,
+      "label": "VBAT"
+    },
+    {
+      "id": "connector10",
+      "uX": -27,
+      "uY": -19,
+      "label": "GND"
+    },
+    {
+      "id": "connector11",
+      "uX": -27,
+      "uY": -13,
+      "label": "VBAT"
+    }
+  ]
+}

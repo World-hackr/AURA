@@ -15,15 +15,20 @@
       "id": "connector0",
       "uX": -14,
       "uY": 0,
-      "label": "TERMINAL 1"
+      "label": "Terminal 1"
     },
     {
       "id": "connector1",
-      "uX": 14,
+      "uX": 18,
       "uY": 0,
-      "label": "TERMINAL 2"
+      "label": "Terminal 2"
     }
   ],
   "category": "Passive",
-  "sub_category": "Resistors"
+  "sub_category": "Resistors",
+  "interactive": [
+    {
+      "type": "resistor_bands"
+    }
+  ]
 }

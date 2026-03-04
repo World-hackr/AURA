@@ -1,6 +1,6 @@
 {
   "type": "rgb_matrix_v25",
-  "label": "RGB LED Matrix",
+  "label": "LED Matrix - Serial Interface - Red/Green/Blue",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/RGB_matrix_v25_breadboard.svg",
@@ -14,76 +14,75 @@
   "pins": [
     {
       "id": "connector128",
-      "uX": 53,
-      "uY": 59,
+      "uX": 20,
+      "uY": 94,
       "label": "VCC"
     },
     {
       "id": "connector129",
-      "uX": 45,
-      "uY": 59,
+      "uX": 12,
+      "uY": 94,
       "label": "VCC"
     },
     {
       "id": "connector130",
-      "uX": 37,
-      "uY": 59,
+      "uX": 4,
+      "uY": 94,
       "label": "SCK"
     },
     {
       "id": "connector131",
-      "uX": 29,
-      "uY": 59,
+      "uX": -4,
+      "uY": 94,
       "label": "CS"
     },
     {
       "id": "connector132",
-      "uX": 21,
-      "uY": 59,
+      "uX": -12,
+      "uY": 94,
       "label": "MISO"
     },
     {
       "id": "connector133",
-      "uX": 13,
-      "uY": 59,
+      "uX": -20,
+      "uY": 94,
       "label": "GND"
     },
     {
       "id": "connector134",
-      "uX": -20,
-      "uY": -91,
+      "uX": 20,
+      "uY": -94,
       "label": "GND"
     },
     {
       "id": "connector135",
-      "uX": -12,
-      "uY": -91,
+      "uX": 12,
+      "uY": -94,
       "label": "MOSI"
     },
     {
       "id": "connector136",
-      "uX": -4,
-      "uY": -91,
+      "uX": 4,
+      "uY": -94,
       "label": "CS"
     },
     {
       "id": "connector137",
-      "uX": 4,
-      "uY": -91,
+      "uX": -4,
+      "uY": -94,
       "label": "SCK"
     },
     {
       "id": "connector138",
-      "uX": 12,
-      "uY": -91,
+      "uX": -12,
+      "uY": -94,
       "label": "VCC"
     },
     {
       "id": "connector139",
-      "uX": 20,
-      "uY": -91,
+      "uX": -20,
+      "uY": -94,
       "label": "VCC"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

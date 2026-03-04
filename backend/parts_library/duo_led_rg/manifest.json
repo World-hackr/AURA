@@ -1,6 +1,6 @@
 {
   "type": "duo_led_rg",
-  "label": "Bi-color LED (Red/Green)",
+  "label": "DUO LED RG",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/DUO_LED_RG_breadboard.svg",
@@ -30,6 +30,5 @@
       "uY": -18,
       "label": "COMMON CATHODE"
     }
-  ],
-  "sub_category": "LEDs"
+  ]
 }

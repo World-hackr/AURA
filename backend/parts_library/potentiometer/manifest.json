@@ -1,0 +1,50 @@
+{
+  "type": "potentiometer",
+  "label": "Potentiometer (Rotary)",
+  "category": "Passive",
+  "sub_category": "Resistors",
+  "views": {
+    "breadboard": "assets/breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 16,
+  "uH": 16,
+  "originX": 8,
+  "originY": 8,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -4,
+      "uY": -8,
+      "label": "1"
+    },
+    {
+      "id": "connector1",
+      "uX": 0,
+      "uY": -8,
+      "label": "WIPER"
+    },
+    {
+      "id": "connector2",
+      "uX": 4,
+      "uY": -8,
+      "label": "3"
+    }
+  ],
+  "interactive": [
+    {
+      "id": "pot_dial",
+      "type": "rotate",
+      "property": "value",
+      "range": [
+        0,
+        100
+      ],
+      "angleRange": [
+        -135,
+        135
+      ]
+    }
+  ]
+}

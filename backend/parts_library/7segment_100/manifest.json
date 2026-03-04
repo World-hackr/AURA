@@ -1,6 +1,6 @@
 {
   "type": "7segment_100",
-  "label": "7-Segment Display (Large)",
+  "label": "7 Segment Display",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/7segment_100.svg",
@@ -72,6 +72,5 @@
       "uY": 169,
       "label": "SEGMENT G"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

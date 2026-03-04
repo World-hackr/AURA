@@ -1,0 +1,28 @@
+{
+  "type": "battery_9v",
+  "label": "Battery block 9V",
+  "category": "Power",
+  "views": {
+    "breadboard": "assets/Battery_block_9V85_leg.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 106,
+  "uH": 169,
+  "originX": 53.0,
+  "originY": 84.5,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": 58,
+      "uY": 65,
+      "label": "GND"
+    },
+    {
+      "id": "connector1",
+      "uX": 58,
+      "uY": 73,
+      "label": "VCC"
+    }
+  ]
+}

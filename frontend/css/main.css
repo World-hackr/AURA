@@ -44,3 +44,69 @@ label {
     color: var(--text-dim);
     margin: 12px 0 4px 0;
 }
+
+/* CUSTOM PALETTE UI */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.color-chip {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.1s, border-color 0.1s;
+    position: relative;
+}
+
+.color-chip:hover {
+    transform: scale(1.1);
+}
+
+.color-chip.active {
+    border-color: white;
+}
+
+.color-chip[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.color-chip:hover::after {
+    opacity: 1;
+}
+
+.unit-selector {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.unit-chip {
+    padding: 4px 8px;
+    background: var(--bg-accent);
+    font-size: 11px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-dim);
+}
+
+.unit-chip.active {
+    background: var(--accent-color);
+    color: white;
+}

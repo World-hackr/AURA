@@ -1,36 +1,76 @@
 {
   "type": "7segment",
-  "label": "Single 7-Segment Display (Common Anode)",
+  "label": "7-Segment LED Display",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/7-segment display.svg",
     "schematic": null,
     "pcb": null
   },
-  "uW": 39,
+  "uW": 38,
   "uH": 59,
-  "originX": 19.5,
+  "originX": 19.0,
   "originY": 29.5,
   "pins": [
-    { "id": "connector0", "uX": -15, "uY": -25, "label": "E" },
-    { "id": "connector1", "uX": -8, "uY": -25, "label": "D" },
-    { "id": "connector2", "uX": 0, "uY": -25, "label": "COM1" },
-    { "id": "connector3", "uX": 8, "uY": -25, "label": "C" },
-    { "id": "connector4", "uX": 15, "uY": -25, "label": "DP" },
-    { "id": "connector5", "uX": 15, "uY": 25, "label": "B" },
-    { "id": "connector6", "uX": 8, "uY": 25, "label": "A" },
-    { "id": "connector7", "uX": 0, "uY": 25, "label": "COM2" },
-    { "id": "connector8", "uX": -8, "uY": 25, "label": "F" },
-    { "id": "connector9", "uX": -15, "uY": 25, "label": "G" }
-  ],
-  "interactive": [
-    { "type": "led", "action": "segA", "id": "path_segA", "label": "Segment A" },
-    { "type": "led", "action": "segB", "id": "path_segB", "label": "Segment B" },
-    { "type": "led", "action": "segC", "id": "path_segC", "label": "Segment C" },
-    { "type": "led", "action": "segD", "id": "path_segD", "label": "Segment D" },
-    { "type": "led", "action": "segE", "id": "path_segE", "label": "Segment E" },
-    { "type": "led", "action": "segF", "id": "path_segF", "label": "Segment F" },
-    { "type": "led", "action": "segG", "id": "path_segG", "label": "Segment G" },
-    { "type": "led", "action": "segDP", "id": "path_segDP", "label": "Decimal Point" }
+    {
+      "id": "connector7",
+      "uX": 0,
+      "uY": 28,
+      "label": "COMMANODE"
+    },
+    {
+      "id": "connector8",
+      "uX": -8,
+      "uY": 28,
+      "label": "CATHODEF"
+    },
+    {
+      "id": "connector9",
+      "uX": -16,
+      "uY": 28,
+      "label": "CATHODEG"
+    },
+    {
+      "id": "connector0",
+      "uX": -16,
+      "uY": -28,
+      "label": "CATHODEE"
+    },
+    {
+      "id": "connector1",
+      "uX": -8,
+      "uY": -28,
+      "label": "CATHODED"
+    },
+    {
+      "id": "connector2",
+      "uX": 0,
+      "uY": -28,
+      "label": "COMMANODE"
+    },
+    {
+      "id": "connector3",
+      "uX": 8,
+      "uY": -28,
+      "label": "CATHODEC"
+    },
+    {
+      "id": "connector4",
+      "uX": 16,
+      "uY": -28,
+      "label": "CATHODEDP"
+    },
+    {
+      "id": "connector5",
+      "uX": 16,
+      "uY": 28,
+      "label": "CATHODEB"
+    },
+    {
+      "id": "connector6",
+      "uX": 8,
+      "uY": 28,
+      "label": "CATHODEA"
+    }
   ]
 }

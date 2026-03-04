@@ -1,0 +1,28 @@
+{
+  "type": "battery_aa",
+  "label": "Battery",
+  "category": "Power",
+  "views": {
+    "breadboard": "assets/batterypack_2xAA_leg.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 186,
+  "uH": 97,
+  "originX": 93.0,
+  "originY": 48.5,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": 99,
+      "uY": -4,
+      "label": "GND"
+    },
+    {
+      "id": "connector1",
+      "uX": 99,
+      "uY": 11,
+      "label": "VCC"
+    }
+  ]
+}

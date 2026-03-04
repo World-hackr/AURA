@@ -1,0 +1,40 @@
+{
+  "type": "lilypad_battery_connector",
+  "label": "LilyPad Coin Cell Battery Holder",
+  "category": "Power",
+  "views": {
+    "breadboard": "assets/LilyPad Coincell-Battery-v17_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 81,
+  "uH": 91,
+  "originX": 40.5,
+  "originY": 45.5,
+  "pins": [
+    {
+      "id": "connector5",
+      "uX": 33,
+      "uY": -28,
+      "label": "GND"
+    },
+    {
+      "id": "connector6",
+      "uX": -22,
+      "uY": -28,
+      "label": "VCC"
+    },
+    {
+      "id": "connector7",
+      "uX": 33,
+      "uY": 27,
+      "label": "GND"
+    },
+    {
+      "id": "connector8",
+      "uX": -22,
+      "uY": 27,
+      "label": "VCC"
+    }
+  ]
+}

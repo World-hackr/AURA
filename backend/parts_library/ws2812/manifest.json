@@ -7,17 +7,46 @@
     "schematic": null,
     "pcb": null
   },
-  "uW": 16,
-  "uH": 16,
-  "originX": 8,
-  "originY": 8,
+  "uW": 24,
+  "uH": 48,
+  "originX": 12.0,
+  "originY": 24.0,
   "pins": [
-    { "id": "connector1", "uX": -6, "uY": 6, "label": "DIN" },
-    { "id": "connector2", "uX": 6, "uY": 6, "label": "VCC" },
-    { "id": "connector0", "uX": -6, "uY": -6, "label": "DOUT" },
-    { "id": "connector5", "uX": 6, "uY": -6, "label": "GND" }
-  ],
-  "interactive": [
-    { "type": "led", "action": "glow", "id": "led_glow", "label": "RGB Diode" }
+    {
+      "id": "connector0",
+      "uX": -8,
+      "uY": -20,
+      "label": "DOUT"
+    },
+    {
+      "id": "connector1",
+      "uX": 0,
+      "uY": -20,
+      "label": "DIN"
+    },
+    {
+      "id": "connector2",
+      "uX": 8,
+      "uY": -20,
+      "label": "VCC"
+    },
+    {
+      "id": "connector3",
+      "uX": 8,
+      "uY": 20,
+      "label": "NC"
+    },
+    {
+      "id": "connector4",
+      "uX": 0,
+      "uY": 20,
+      "label": "VCC"
+    },
+    {
+      "id": "connector5",
+      "uX": -8,
+      "uY": 20,
+      "label": "GND"
+    }
   ]
 }

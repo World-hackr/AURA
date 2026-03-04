@@ -17,16 +17,14 @@ A professional-grade, web-based circuit visualization and design environment bui
 ## 📥 Setup & Installation
 
 ### 1. Backend
-```bash
-cd backend
-python -m venv venv
-source venv/Scripts/activate  # On Windows: .\venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-```
 
-### 2. Frontend
-Simply open `frontend/index.html` in any modern web browser or serve via Live Server.
 
----
-*Created by Santo - Documentation Updated: Feb 28, 2026*
+
+
+
+
+
+
+
+
+

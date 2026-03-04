@@ -216,5 +216,35 @@
       "uY": 40,
       "label": "TX"
     }
+  ],
+  "indicators": [
+    {
+      "id": "led_pwr",
+      "uX": 13,
+      "uY": -45,
+      "color": "#00FF00"
+    },
+    {
+      "id": "led_l",
+      "uX": -2,
+      "uY": 17,
+      "color": "#FFFF00"
+    }
+  ],
+  "interactive": [
+    {
+      "id": "led_pwr_part_glow_trigger",
+      "type": "opacity",
+      "property": "brightness",
+      "range": [0, 100],
+      "opacityRange": [0.0, 1.0]
+    },
+    {
+      "id": "led_l_part_glow_trigger",
+      "type": "opacity",
+      "property": "brightness",
+      "range": [0, 100],
+      "opacityRange": [0.0, 1.0]
+    }
   ]
 }

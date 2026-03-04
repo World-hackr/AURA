@@ -1,6 +1,6 @@
 {
   "type": "oled_wemos_d1_mini",
-  "label": "Wemos D1 Mini OLED",
+  "label": "WeMos D1 Mini OLED Shield",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/WeMos-D1-mini-OLED-Shield-no-headers_breadboard.svg",
@@ -58,56 +58,55 @@
       "id": "3v3",
       "uX": -36,
       "uY": -16,
-      "label": "3V3"
+      "label": "3.3V"
     },
     {
       "id": "5v",
-      "uX": -36,
+      "uX": 36,
       "uY": -16,
       "label": "5V"
     },
     {
       "id": "g",
-      "uX": -36,
+      "uX": 36,
       "uY": -8,
       "label": "G"
     },
     {
       "id": "d4",
-      "uX": -36,
+      "uX": 36,
       "uY": 0,
       "label": "D4"
     },
     {
       "id": "d3",
-      "uX": -36,
+      "uX": 36,
       "uY": 8,
       "label": "D3"
     },
     {
       "id": "d2",
-      "uX": -36,
+      "uX": 36,
       "uY": 16,
       "label": "D2"
     },
     {
       "id": "d1",
-      "uX": -36,
+      "uX": 36,
       "uY": 24,
       "label": "D1"
     },
     {
       "id": "rx",
-      "uX": -36,
+      "uX": 36,
       "uY": 32,
       "label": "RX"
     },
     {
       "id": "tx",
-      "uX": -36,
+      "uX": 36,
       "uY": 40,
       "label": "TX"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

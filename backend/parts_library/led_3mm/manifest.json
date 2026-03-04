@@ -1,6 +1,6 @@
 {
   "type": "led_3mm",
-  "label": "Red LED - 3mm",
+  "label": "LED - 3mm",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/LED-3mm-red-leg.svg",
@@ -14,24 +14,42 @@
   "pins": [
     {
       "id": "connector0",
-      "uX": -3,
-      "uY": -13,
-      "label": "CATHODE"
+      "uX": -4,
+      "uY": -16,
+      "label": "Cathode"
     },
     {
       "id": "connector1",
-      "uX": 5,
-      "uY": -13,
-      "label": "ANODE"
+      "uX": 4,
+      "uY": -16,
+      "label": "Anode"
     }
   ],
-  "sub_category": "LEDs",
   "interactive": [
     {
-      "type": "led",
-      "action": "glow",
       "id": "led_glow",
-      "label": "LED Lens"
+      "type": "color",
+      "property": "color",
+      "map": {
+        "Red": "#FF0000",
+        "Green": "#00FF00",
+        "Blue": "#0000FF",
+        "Yellow": "#FFFF00",
+        "White": "#FFFFFF"
+      }
+    },
+    {
+      "id": "led_glow",
+      "type": "opacity",
+      "property": "brightness",
+      "range": [
+        0,
+        100
+      ],
+      "opacityRange": [
+        0.0,
+        1.0
+      ]
     }
   ]
 }

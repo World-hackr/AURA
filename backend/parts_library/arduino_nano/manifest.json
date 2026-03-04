@@ -1,6 +1,6 @@
 {
   "type": "arduino_nano",
-  "label": "Arduino Nano V3.0 (ATmega328P)",
+  "label": "Arduino Nano (Rev3.0)",
   "category": "Microcontroller",
   "views": {
     "breadboard": "assets/breadboard.svg",
@@ -184,7 +184,7 @@
       "id": "connector44",
       "uX": 24,
       "uY": -45,
-      "label": "3V3"
+      "label": "3.3V"
     },
     {
       "id": "connector45",
@@ -227,6 +227,36 @@
       "uX": -8,
       "uY": 59,
       "label": "GND"
+    }
+  ],
+  "interactive": [
+    {
+      "id": "led_pwr_part_glow_trigger",
+      "type": "opacity",
+      "property": "brightness",
+      "range": [0, 100],
+      "opacityRange": [0.0, 1.0]
+    },
+    {
+      "id": "led_l_part_glow_trigger",
+      "type": "opacity",
+      "property": "brightness",
+      "range": [0, 100],
+      "opacityRange": [0.0, 1.0]
+    },
+    {
+      "id": "led_rx_part_glow_trigger",
+      "type": "opacity",
+      "property": "brightness",
+      "range": [0, 100],
+      "opacityRange": [0.0, 1.0]
+    },
+    {
+      "id": "led_tx_part_glow_trigger",
+      "type": "opacity",
+      "property": "brightness",
+      "range": [0, 100],
+      "opacityRange": [0.0, 1.0]
     }
   ]
 }

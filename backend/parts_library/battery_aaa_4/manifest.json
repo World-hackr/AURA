@@ -1,0 +1,28 @@
+{
+  "type": "battery_aaa_4",
+  "label": "4 x AAA Battery Mount",
+  "category": "Power",
+  "views": {
+    "breadboard": "assets/batterypack_4xAAA.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 170,
+  "uH": 148,
+  "originX": 85.0,
+  "originY": 74.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": 91,
+      "uY": -40,
+      "label": "GND"
+    },
+    {
+      "id": "connector1",
+      "uX": 91,
+      "uY": 45,
+      "label": "VCC"
+    }
+  ]
+}

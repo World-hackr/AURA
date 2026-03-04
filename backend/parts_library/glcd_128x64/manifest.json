@@ -1,6 +1,6 @@
 {
   "type": "glcd_128x64",
-  "label": "Graphic LCD 128x64",
+  "label": "128 x 64 Graphic LCD",
   "category": "Other",
   "views": {
     "breadboard": "assets/GLCD_128x64.svg",
@@ -15,123 +15,122 @@
     {
       "id": "connector6",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "7 DB0"
     },
     {
       "id": "connector7",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "8 DB1"
     },
     {
       "id": "connector8",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "9 BD2"
     },
     {
       "id": "connector0",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "1 VSS"
     },
     {
       "id": "connector9",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "10 DB3"
     },
     {
       "id": "connector10",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "11 DB4"
     },
     {
       "id": "connector11",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "12 DB5"
     },
     {
       "id": "connector12",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "13 DB6"
     },
     {
       "id": "connector13",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "14 DB7"
     },
     {
       "id": "connector14",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "15 CS1"
     },
     {
       "id": "connector15",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "16 CS2"
     },
     {
       "id": "connector16",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "17 RST"
     },
     {
       "id": "connector17",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "18 VOUT"
     },
     {
       "id": "connector18",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "19 A(+)"
     },
     {
       "id": "connector19",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "20 K(-)"
     },
     {
       "id": "connector1",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "2 VDD"
     },
     {
       "id": "connector2",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "3 VO"
     },
     {
       "id": "connector3",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "4 D/I"
     },
     {
       "id": "connector4",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "5 R/W"
     },
     {
       "id": "connector5",
       "uX": -183,
-      "uY": 138,
+      "uY": 1032,
       "label": "6 ENABLE"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

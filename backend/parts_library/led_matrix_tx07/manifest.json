@@ -1,6 +1,6 @@
 {
   "type": "led_matrix_tx07",
-  "label": "LED Dot Matrix (TX07)",
+  "label": "LED Dot Matrix 18mm (0.7 INCH)",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/LED_Matrix_Kingbright_TX07-11.svg",
@@ -14,76 +14,75 @@
   "pins": [
     {
       "id": "connector1",
-      "uX": -12,
+      "uX": -20,
       "uY": 20,
       "label": "COLUMN 1"
     },
     {
       "id": "connector2",
-      "uX": -12,
+      "uX": -20,
       "uY": 12,
       "label": "ROW 3"
     },
     {
       "id": "connector3",
-      "uX": -12,
+      "uX": -20,
       "uY": 4,
       "label": "COLUMN 2"
     },
     {
       "id": "connector4",
-      "uX": -12,
+      "uX": -20,
       "uY": -4,
       "label": "ROW 5"
     },
     {
       "id": "connector5",
-      "uX": -12,
+      "uX": -20,
       "uY": -12,
       "label": "ROW 6"
     },
     {
       "id": "connector6",
-      "uX": -12,
+      "uX": -20,
       "uY": -20,
       "label": "ROW 7"
     },
     {
       "id": "connector7",
-      "uX": 12,
+      "uX": 20,
       "uY": -20,
       "label": "COLUMN 4"
     },
     {
       "id": "connector8",
-      "uX": 12,
+      "uX": 20,
       "uY": -12,
       "label": "COLUMN 5"
     },
     {
       "id": "connector9",
-      "uX": 12,
+      "uX": 20,
       "uY": -4,
       "label": "ROW 4"
     },
     {
       "id": "connector10",
-      "uX": 12,
+      "uX": 20,
       "uY": 4,
       "label": "COLUMN 3"
     },
     {
       "id": "connector11",
-      "uX": 12,
+      "uX": 20,
       "uY": 12,
       "label": "ROW 2"
     },
     {
       "id": "connector12",
-      "uX": 12,
+      "uX": 20,
       "uY": 20,
       "label": "ROW 1"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

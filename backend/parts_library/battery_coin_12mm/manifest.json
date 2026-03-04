@@ -1,0 +1,28 @@
+{
+  "type": "battery_coin_12mm",
+  "label": "Battery Holders",
+  "category": "Power",
+  "views": {
+    "breadboard": "assets/sparkfun-electromechanical_battery_breadboard.svg",
+    "schematic": null,
+    "pcb": null
+  },
+  "uW": 52,
+  "uH": 64,
+  "originX": 26.0,
+  "originY": 32.0,
+  "pins": [
+    {
+      "id": "connector0",
+      "uX": -4,
+      "uY": -28,
+      "label": "VCC"
+    },
+    {
+      "id": "connector2",
+      "uX": 4,
+      "uY": 28,
+      "label": "GND"
+    }
+  ]
+}

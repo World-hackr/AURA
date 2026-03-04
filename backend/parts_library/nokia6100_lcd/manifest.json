@@ -1,6 +1,6 @@
 {
   "type": "nokia6100_lcd",
-  "label": "Nokia 6100 LCD",
+  "label": "Nokia 6100 Color LCD",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/sparkfun-displays_nokia6100_lcd_breadboard.svg",
@@ -14,58 +14,63 @@
   "pins": [
     {
       "id": "connector4",
-      "uX": -46,
-      "uY": 70,
+      "uX": 16,
+      "uY": -84,
       "label": "CS"
     },
     {
       "id": "connector2",
-      "uX": -46,
-      "uY": 70,
+      "uX": 0,
+      "uY": -84,
       "label": "DIO"
     },
     {
       "id": "connector7",
-      "uX": -46,
-      "uY": 70,
+      "uX": 0,
+      "uY": 84,
       "label": "GND"
     },
     {
       "id": "connector8",
-      "uX": -46,
-      "uY": 70,
+      "uX": -8,
+      "uY": 84,
       "label": "LEDGND"
     },
     {
       "id": "connector1",
-      "uX": -46,
-      "uY": 70,
+      "uX": -8,
+      "uY": -84,
       "label": "RESET"
     },
     {
       "id": "connector3",
-      "uX": -46,
-      "uY": 70,
+      "uX": 8,
+      "uY": -84,
       "label": "SCK"
     },
     {
       "id": "connector0",
-      "uX": -46,
-      "uY": 70,
+      "uX": -16,
+      "uY": -84,
       "label": "VDIGITAL"
     },
     {
       "id": "connector5",
-      "uX": -46,
-      "uY": 70,
+      "uX": 16,
+      "uY": 84,
       "label": "VDISPLAY"
     },
     {
       "id": "connector9",
-      "uX": -46,
-      "uY": 70,
+      "uX": -16,
+      "uY": 84,
       "label": "VLED"
+    },
+    {
+      "id": "connector6",
+      "uX": 8,
+      "uY": 84,
+      "label": "VCC"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

@@ -14,28 +14,27 @@
   "pins": [
     {
       "id": "connector0",
-      "uX": -85,
-      "uY": 45,
+      "uX": -63.666,
+      "uY": -14.0,
       "label": "GND"
     },
     {
       "id": "connector1",
-      "uX": -85,
-      "uY": 45,
+      "uX": -63.666,
+      "uY": -6.124,
       "label": "VCC"
     },
     {
       "id": "connector2",
-      "uX": -85,
-      "uY": 45,
+      "uX": -63.666,
+      "uY": 1.774,
       "label": "SDA"
     },
     {
       "id": "connector3",
-      "uX": -85,
-      "uY": 45,
-      "label": "SCL"
+      "uX": -63.666,
+      "uY": 9.646,
+      "label": "SCK"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

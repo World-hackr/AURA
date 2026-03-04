@@ -1,6 +1,6 @@
 {
   "type": "color_lcd_shield",
-  "label": "Color LCD Shield",
+  "label": "Arduino Color LCD Shield",
   "category": "Optoelectronics",
   "views": {
     "breadboard": "assets/Color-LCD-Shield-v14_breadboard.svg",
@@ -180,6 +180,5 @@
       "uY": -76,
       "label": "RESET"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }

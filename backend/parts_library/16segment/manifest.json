@@ -1,6 +1,6 @@
 {
   "type": "16segment",
-  "label": "16-Segment Display",
+  "label": "16-segment display",
   "category": "Other",
   "views": {
     "breadboard": "assets/16-segment display.svg",
@@ -20,7 +20,7 @@
     },
     {
       "id": "connector7",
-      "uX": -24,
+      "uX": -25,
       "uY": -24,
       "label": "ANODER"
     },
@@ -32,7 +32,7 @@
     },
     {
       "id": "connector8",
-      "uX": -24,
+      "uX": -25,
       "uY": -32,
       "label": "ANODEN"
     },
@@ -50,13 +50,13 @@
     },
     {
       "id": "connector0",
-      "uX": -24,
+      "uX": -25,
       "uY": 32,
       "label": "ANODEA2"
     },
     {
       "id": "connector1",
-      "uX": -24,
+      "uX": -25,
       "uY": 24,
       "label": "ANODEA1"
     },
@@ -68,7 +68,7 @@
     },
     {
       "id": "connector2",
-      "uX": -24,
+      "uX": -25,
       "uY": 16,
       "label": "ANODEF"
     },
@@ -80,13 +80,13 @@
     },
     {
       "id": "connector3",
-      "uX": -24,
+      "uX": -25,
       "uY": 8,
       "label": "ANODEH"
     },
     {
       "id": "connector4",
-      "uX": -24,
+      "uX": -25,
       "uY": 0,
       "label": "ANODEE"
     },
@@ -98,7 +98,7 @@
     },
     {
       "id": "connector5",
-      "uX": -24,
+      "uX": -25,
       "uY": -8,
       "label": "ANODEJ"
     },
@@ -110,7 +110,7 @@
     },
     {
       "id": "connector6",
-      "uX": -24,
+      "uX": -25,
       "uY": -16,
       "label": "ANODEP"
     },
@@ -120,6 +120,5 @@
       "uY": 8,
       "label": "ANODEB"
     }
-  ],
-  "sub_category": "Displays"
+  ]
 }
